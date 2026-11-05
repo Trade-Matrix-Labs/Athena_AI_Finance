@@ -1,0 +1,17 @@
+filing: 966 ix:nonFraction tags, 560875 chars of text
+sections 13 · digest 13 · facts 182 · sources 79 · glossary 10 · assumptions 1
+reported (tagged) 114 · reported (text) 18 · calculated 50
+facts shown per sheet: cover 13 · 01 business 8 · 02 scorecard 29 · 03 profitability 45 · 04 segments 27 · 05 earnings-quality 18 · 06 cash-flow 23 · 07 investment 9 · 08 balance-sheet 23 · 09 shareholders 17 · 10 demand 11 · 11 risks 9 · 12 valuation 7 · 13 watchlist 10
+orphan facts 0: -
+orphan sources 0: -
+mismatches: 0
+exit 0
+
+selftest: altered reported private-sec-fy2025 (+1), calculated fcf-fy2025 (+1), src-68 quote ('sustain' -> 'maintain'), earnings-quality keypoint ('times' after a multiple), rpo-fy2025 decimals (-8 -> -3)
+  caught: src-68: quote not found in filing
+  caught: private-sec-fy2025: value 72925000 != filing [Decimal('7.2924E+7')]
+  caught: rpo-fy2025: decimals -3 != filing ['-8']
+  caught: fcf-fy2025: value 2100591001 != recomputed 2100591000
+  caught: section earnings-quality: LINT unit words after ocf-to-ni-fy2025: ' times net income; stock-based'
+selftest: 5 mismatches raised; all five alterations caught: True
+exit 0

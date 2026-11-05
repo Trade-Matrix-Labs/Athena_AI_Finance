@@ -1,0 +1,30 @@
+Athena AI Finance, a microservice of Athena AI
+Copyright 2026 Trade Matrix Labs
+
+This product is licensed under the Apache License, Version 2.0 (see LICENSE).
+
+The Apache License does not grant permission to use the "Athena" name, or any
+other trade name, trademark, service mark or product name of the licensor
+(Apache License 2.0, section 6). No trademark rights are granted.
+
+Third-party material
+--------------------
+
+Fonts (ui/fonts/), each under the SIL Open Font License, Version 1.1. The
+licence texts are kept next to the fonts:
+  - Manrope: Copyright 2018 The Manrope Project Authors
+    (https://github.com/googlefonts/manrope). ui/fonts/manrope-OFL.txt
+  - Newsreader: Copyright 2020 The Newsreader Project Authors
+    (http://github.com/productiontype/Newsreader). ui/fonts/newsreader-OFL.txt
+  - Noto Sans Mono (Regular, Medium, Bold; subset): Copyright 2015 Google LLC.
+    ui/fonts/notosansmono-OFL.txt
+The fonts are not covered by the Apache License.
+
+SEC filing (inputs/pltr-20251231.htm): Palantir Technologies Inc., Form 10-K
+for the fiscal year ended December 31, 2025, accession number
+0001321655-26-000011, as filed with the U.S. Securities and Exchange
+Commission and publicly available on SEC EDGAR. It is public data, included
+as downloaded so the number checker can check the sample report's figures.
+It is not covered by the Apache License. The sample reports in this
+repository quote and derive figures from it; Palantir Technologies Inc. is
+not affiliated with this project and has not reviewed or endorsed it.

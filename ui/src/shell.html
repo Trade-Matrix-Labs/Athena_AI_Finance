@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Athena App</title>
+<style>
+/*APP_CSS*/
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<aside class="side" id="side" aria-label="Athena"></aside>
+<main id="main" tabindex="-1"></main>
+<nav class="tabbar" id="tabbar" aria-label="Sections"></nav>
+<div id="toolbar" class="toolbar" role="toolbar" aria-label="Work on the selection" hidden></div>
+<div id="scrim" class="scrim" hidden></div>
+<div id="layer"></div>
+<div id="live" class="vh" aria-live="polite"></div>
+<span id="hlD-q" hidden>Reported in the filing</span><span id="hlD-c" hidden>Calculated by code</span>
+<button id="demoBtn" class="demobtn" aria-haspopup="true" aria-expanded="false" aria-controls="demo">Demo</button>
+<div id="demo" class="menu" role="menu" hidden></div>
+<template id="essay"><h1 class="et">When intelligence becomes a service</h1>
+<p><em>Athena and the effort to make expert work accessible</em></p>
+<p>Jaden B Joeng, Founder &amp; CEO, Trade Matrix Labs · 4 November 2026</p>
+<h2>0. Introduction</h2>
+<p>A cheap AI answer can still cost a lot to use. Whoever reads it may have to track down the original sources, test an assumption and work out which conclusions hold up. An expert can treat that as a useful starting point. Someone who came looking for expertise in the first place is left with a difficult problem: how far should they trust the answer?</p>
+<p>Much of the opportunity for AI-native services sits in that unfinished work. A service can keep the evidence behind an answer, run calculations with tools and let the reader ask a follow-up without redoing the research. Inference then becomes part of an ongoing service of gathering material, interpreting it and adjusting the explanation as the customer's needs become clearer.</p>
+<p>The people who already do this work could save time, and the effect might not stop there. If specialist analysis becomes affordable and easier to use, someone who went without it before may be able to make it part of their life. That possibility shapes the direction of Trade Matrix Labs. It also raises a demanding question for any product built around AI: can it deliver work people have reason to rely on, at a price that makes repeated use worthwhile?</p>
+<h2>1. Intention: Why Athena?</h2>
+<p>Financial research makes that question concrete. A company's Form 10-K covers its business and financial condition and includes audited financial statements.<a class="cite" href="https://www.investor.gov/introduction-investing/investing-basics/glossary/form-10-k" target="_blank" rel="noopener" aria-label="Source 4">[4]</a> The document is available, but understanding it takes more than finding a number. You have to know what the number measures, which period it covers and how it relates to the rest of the business.</p>
+<p>Take a contractual commitment. The amount committed over the life of an agreement and the amount still outstanding are two different things. An analysis that mixes them up can mislead even while quoting the filing accurately, and catching the mistake takes the very knowledge the reader may be hoping to get from the report.</p>
+<p>Professional teams have the expertise but only so much time. Individual readers may also run into barriers of training, language or cost. Athena starts from these limits. Its purpose is to make financial analysis easier to examine and use, including for people with no institutional research budget. The report is where they start. From there they can open its evidence and question it, which lets the work continue.</p>
+<h2>2. Who can put AI to work?</h2>
+<p>We should be wary of assuming that access to a model will create a broad paying audience, and the market gives reasons why. In August 2026, 4.5% of eligible consumers in YipitData's U.S. e-receipt panel held an active paid personal subscription to ChatGPT, Gemini or Claude, according to a16z's account of the data. The top 10% of spenders accounted for roughly half of observed consumer AI spending.<a class="cite" href="https://a16z.com/100-gen-ai-apps-7/" target="_blank" rel="noopener" aria-label="Source 1">[1]</a> These figures measure subscription penetration, not free-to-paid conversion, and they don't tell us why people aren't paying. Free tools may already be good enough. Or a person may still lack a service suited to a task that matters to them.</p>
+<p><em>Table 1. Paid consumer AI use, from YipitData as reported by a16z.<a class="cite" href="https://a16z.com/100-gen-ai-apps-7/" target="_blank" rel="noopener" aria-label="Source 1">[1]</a></em></p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Figure</th>
+<th>What it does not show</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Eligible U.S. consumers with an active paid personal subscription to ChatGPT, Gemini or Claude, August 2026</td>
+<td>4.5%</td>
+<td>Free-to-paid conversion</td>
+</tr>
+<tr>
+<td>Share of observed consumer AI spending from the top 10% of spenders</td>
+<td>Roughly half</td>
+<td>Why other people aren't paying</td>
+</tr>
+</tbody>
+</table>
+<p>The ways people use AI differ too. In Anthropic's February 2026 sample of Claude conversations, coding stayed prominent while other uses grew. Longer-standing users were more likely to get responses the study classified as successful.<a class="cite" href="https://www.anthropic.com/research/economic-index-march-2026-report" target="_blank" rel="noopener" aria-label="Source 2">[2]</a> That association raises a practical question. How much does a customer have to learn before they get useful work from the tool?</p>
+<p>Then there is trust. In an August 2026 survey, U.S. adults expected reliability, privacy and a preference for human interaction to be among the barriers to workplace AI adoption by 2030.<a class="cite" href="https://www.anthropic.com/research/ai-expectations-gap" target="_blank" rel="noopener" aria-label="Source 3">[3]</a> A useful product has to take account of where an answer will end up. An explanation that's fine for casual exploration may need much more support before someone puts it into professional work.</p>
+<p>For Trade Matrix Labs, that makes access to specialist services worth investigating. Someone already buying research may value the time saved. A person never able to afford it may gain a capability they didn't have before. An affordable service that fits the task could bring both into the market. The second group is much of why we're doing this. Their needs will decide whether easier access leads to regular use.</p>
+<h2>3. Building expertise into a service</h2>
+<p>The commitment example shows why checking a report takes several kinds of work. Software can confirm that a quotation appears in a filing and recompute a formula from its inputs. Neither check settles, on its own, whether a lifetime amount has been described as a remaining obligation, and that interpretation has to survive review too.</p>
+<p><em>Table 2. What each check can settle, using the commitment example.</em></p>
+<table>
+<thead>
+<tr>
+<th>Question</th>
+<th>Who settles it</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Does the quotation appear in the filing?</td>
+<td>Software</td>
+</tr>
+<tr>
+<td>Does the formula recompute from its inputs?</td>
+<td>Software</td>
+</tr>
+<tr>
+<td>Has a lifetime amount been described as a remaining obligation?</td>
+<td>Review of the interpretation</td>
+</tr>
+</tbody>
+</table>
+<p>So a research workflow has to keep the meaning of the evidence intact as it moves through the system. The model needs the relevant passage and enough context to read it properly. A calculation needs inputs you can identify. Review has to examine the conclusion those pieces are being used to support. And when the evidence falls short, the answer has to say where the uncertainty is.</p>
+<p>The economics of AI has a useful parallel. Imas, Koh and Legg distinguish an agent's competence from an organization's capacity to coordinate work.<a class="cite" href="https://institute.deepmind.com/essays/the-economics-of-intelligence/" target="_blank" rel="noopener" aria-label="Source 8">[8]</a> Applied to a research service, that points to the handoffs: what reaches the writer, what a reviewer can inspect and whether a correction makes it into the delivered report.</p>
+<p>All of this changes how affordability should be measured. Inference is one part of what a report costs. Revisions and expert intervention add to it, and so does the time a reader spends checking the result. A service gets more accessible when it can reduce that combined burden while still meeting a useful standard of quality.</p>
+<h2>4. Following a question through Athena</h2>
+<p>Athena began as a private report engine. For the hackathon the work grew into a Reading App (Athena AI) and Ask Agent, with both components in one public repository. The report and the means to examine it now sit in the same place.<a class="cite" href="#es-ref-B" data-act="devanchor" data-id="es-ref-B" aria-label="Note B">[B]</a></p>
+<p>Suppose a reader wants to know why cash flow has moved differently from earnings. They might start from a figure in the report. Underlined figures are either quoted from the filing or calculated by code from quoted inputs. Selecting one opens the Probe: Read shows the value, Exact exposes its precision, Work shows the arithmetic and Filing brings up the supporting passage. Holding Space lets the reader examine those relationships through a table, and the evidence is there at the point where the question comes up.</p>
+<p><em>Table 3. What a reader sees when they select a figure.</em></p>
+<table>
+<thead>
+<tr>
+<th>View</th>
+<th>What it shows</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Read</td>
+<td>The value</td>
+</tr>
+<tr>
+<td>Exact</td>
+<td>Its precision</td>
+</tr>
+<tr>
+<td>Work</td>
+<td>The arithmetic</td>
+</tr>
+<tr>
+<td>Filing</td>
+<td>The supporting passage</td>
+</tr>
+<tr>
+<td>Hold Space</td>
+<td>The relationships, through a table</td>
+</tr>
+</tbody>
+</table>
+<p>From the same panel the reader can ask about the figure. Ask works from the current report edition, cites its passages and checks its numerical answers against that edition. Asking a question leaves the report unchanged; actions that do change something require approval. The conversation can build up an explanation without losing the report it refers to.</p>
+<p>Questions, answers and memos stay attached to their subjects and are saved in Athena's Library beside the public report. Custom reports and export are planned. The direction is to let readers carry the analysis into their own work with the evidence still available. Someone learning to read a filing may need a plain explanation, while an experienced analyst may want to examine an assumption more closely.</p>
+<p>Behind all this, agents read the filing, draft the report and send it for review. Each job has a specified model, tools and cost limit. A failed code check blocks delivery, and users can follow the production stages in the application. An evidence store keeps the quotations and facts used in the report.</p>
+<p>Several readers can use the same report edition, each with their own questions. Reusing the research this way could spread production and review costs across them. Whether that pays off depends on how much follow-up work each reader needs and whether the shared analysis is useful enough to come back to.</p>
+<h2>5. Reproducing the standard</h2>
+<p>The quality target came from reference reports built through repeated work with AI and my experience in financial analysis, statistics and trading. Review covered financial interpretation as well as calculations and sources. The resulting reports set a standard for work that could support further analysis and be adapted to different readers' needs.</p>
+<p>The hackathon required Meta models, and the provided $150 in credits informed the choice of Muse Spark. That configuration has not consistently reproduced the reference quality. So development has focused on what we give the model, what we hand to calculation tools and how agents revise and review a report. Those parts of the system can be changed and examined alongside the choice of model.</p>
+<p>One assisted revision of a Palantir FY2025 report shows the progress and the work left to do. The review found that earlier errors in the treatment of cloud commitments and leases had been corrected. All 27 calculated figures agreed with independent recomputation, and 83 quotations matched the filing text supplied for review. Structure and prose still needed substantial improvement.<a class="cite" href="#es-ref-A" data-act="devanchor" data-id="es-ref-A" aria-label="Note A">[A]</a></p>
+<p>Correcting that report is a different achievement from producing comparable work from a new filing. The next test is to produce such work from a new filing with limited expert correction, while measuring delivery cost and time. Weight-level post-training was beyond the time and compute we had for this iteration. For now the task is to find out how far the available model and workflow can go, with evidence that stays usable when a reader takes the work further.</p>
+<h2>6. Specialist work in everyday AI</h2>
+<p>Meta's announcements for the Muse personal agent and AI glasses describe AI working across apps and a growing family of devices.<a class="cite" href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/" target="_blank" rel="noopener" aria-label="Source 5">[5]</a><a class="cite" href="https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/" target="_blank" rel="noopener" aria-label="Source 6">[6]</a> That brings the question of useful specialist services into everyday settings. Someone who asks a question while walking may not have much chance to inspect a long answer, yet still need to know when its conclusion rests on an assumption.</p>
+<p>One possible experience starts with a short spoken explanation. Later the person opens the supporting calculation on a phone and goes on reading at a desk. If the question, report edition and evidence stay connected, the work can carry on without anyone rebuilding the conversation at each step. The Reading App (Athena AI) and Ask Agent provide a concrete place to start exploring that continuity.</p>
+<p>Meta already describes activity logs, editable memory and approval controls in Muse.<a class="cite" href="https://introducing.muse.ai/" target="_blank" rel="noopener" aria-label="Source 7">[7]</a> Financial research adds requirements of its own. A claim has to refer to the right reporting period, and a calculation has to answer the question being asked. The interface must also leave room for uncertainty. A fluent spoken answer can be easy to accept, particularly when the listener can't see the material behind it.</p>
+<p>Here Athena's approach could contribute to Meta's wider direction. If people can examine specialist work and build on it, they would have more reasons to use personal AI for tasks that matter to them. With permission, their questions could show where an explanation confuses them or an interface interrupts the work. Corrections would need verification before entering the evidence base. Over time that feedback could improve how the service delivers expertise through different interfaces.</p>
+<h2>7. Beyond the hackathon</h2>
+<p>A useful next step is getting Athena to people who would otherwise struggle to obtain professional research. What can they understand with it? What can they produce, and where do they still get stuck? Repeat use, the effort left to the reader and the expert intervention behind each report would help show whether the service is delivering on its purpose.</p>
+<p>The same questions need testing across more companies, reporting periods and languages. Taking the approach to another field would require that field's own standards and evidence. Personal context could make the service more relevant, provided users control how it's used and give separate permission for anything beyond delivering the service.</p>
+<p>Longer term, we want to build services in which AI takes on more of the work needed to make expertise useful. Athena starts with financial research because its sources, calculations and interpretations can be examined closely. The next stage should show whether that work lets people with less time, money or specialist training get more from research they couldn't readily use before.</p>
+<p><em>Athena is a prototype for general financial research. The development results are preliminary. The proposed Meta collaboration and cross-device experience are future possibilities; this essay does not imply Meta's endorsement.</em></p>
+<h2>References</h2>
+<p>[1] Moore, O. (2026, October 5). <em><a href="https://a16z.com/100-gen-ai-apps-7/" target="_blank" rel="noopener">The Top 100 Gen AI Consumer Apps — 7th Edition</a></em>. Andreessen Horowitz. YipitData figures are cited as reported by a16z.</p>
+<p>[2] Anthropic. (2026, March 24). <em><a href="https://www.anthropic.com/research/economic-index-march-2026-report" target="_blank" rel="noopener">Anthropic Economic Index report: Learning curves</a></em>. February 2026 Claude usage sample. The reported association between user tenure and classified success is observational.</p>
+<p>[3] Sacher, S., Cotter, T., Jones, C. I., Korinek, A., &amp; McCrory, P. (2026, October 16). <em><a href="https://www.anthropic.com/research/ai-expectations-gap" target="_blank" rel="noopener">The AI expectations gap</a></em>. Anthropic.</p>
+<p>[4] U.S. Securities and Exchange Commission. (n.d.). <em><a href="https://www.investor.gov/introduction-investing/investing-basics/glossary/form-10-k" target="_blank" rel="noopener">Form 10-K</a></em>. Investor.gov. Accessed November 4, 2026.</p>
+<p>[5] Meta. (2026, September 8; updated September 30). <em><a href="https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/" target="_blank" rel="noopener">Introducing Muse: The World's First Personal AI Agent Built for Everyone</a></em>. </p>
+<p>[6] Meta. (2026, September 24). <em><a href="https://about.fb.com/news/2026/09/the-biggest-news-from-connect-2026/" target="_blank" rel="noopener">The Biggest News From Connect 2026</a></em>. The announcement described Muse on glasses as a forthcoming integration.</p>
+<p>[7] Sarantakos, M., with Awad, C. (2026, September). <em><a href="https://introducing.muse.ai/" target="_blank" rel="noopener">How We Designed Muse</a></em>. </p>
+<p>[8] Imas, A., Koh, A., &amp; Legg, S. (2026, October 29). <em><a href="https://institute.deepmind.com/essays/the-economics-of-intelligence/" target="_blank" rel="noopener">The Economics of Intelligence: How and when does AGI lead to economic transformation?</a></em>. DeepMind Institute.</p>
+<h2>Internal evidence and product context</h2>
+<p id="es-ref-A" tabindex="-1">[A] Trade Matrix Labs. <em>R14 complete-report assessment</em>, November 1, 2026. Internal, unpublished development record concerning a restricted, assisted revision of the Palantir FY2025 report. One reviewer knew the model, assistance and prior findings. The review covered the complete edition, recomputed 27 calculated facts using Decimal arithmetic and checked 83 quotations against the bound cleaned filing text. It identified no remaining material financial meaning or fact defect within that supplied-source review, while finding the editorial quality below the required standard. The native disposition remained HOLD, and the app shows this report as draft and review required. This was not fresh autonomous production, independent authentication against the live SEC filing, a controlled model comparison or a general reliability estimate. Source record: the retained R14 assessment.</p>
+<p id="es-ref-B" tabindex="-1">[B] Trade Matrix Labs. <em>Athena AI introduction video transcript</em>, draft supplied by the author on November 4, 2026. Product descriptions in Chapter 4 follow this transcript; they are not an independent end-to-end acceptance test. It describes a private report engine and a public repository containing the Reading App (Athena AI) and Ask Agent. The Reading App demo needs no Meta key; enabling Ask requires the user's own Meta key. Ask is described as a LangChain agent on Muse Spark 1.3. Public filing research uses Spark Contributor, while reader questions use Standard and are not routed to Contributor. Custom reports and export are planned.</p></template>
+<script type="application/json" id="report-data"></script>
+<script>
+/*APP_JS*/
+</script>
+</body>
+</html>

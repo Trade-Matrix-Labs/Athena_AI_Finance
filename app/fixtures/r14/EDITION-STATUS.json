@@ -1,0 +1,11 @@
+{
+  "schema": "athena-edition-status.v1",
+  "report_sha256": "0c62f515cc417d07ceb6a802bbebfed719d00d9b98a4cc916c97473c14754d1e",
+  "delivery_complete": true,
+  "native_status": "HOLD",
+  "quality_disposition": "review_required",
+  "publication_disposition": "draft",
+  "delivery_complete_scope": "The retained reader package contains a cover and all 16 chapters. This is not native FINAL, financial acceptance, successful App ingestion, or publication approval.",
+  "native_final_verified": false,
+  "final_store_reopen_verified": false
+}

@@ -1,0 +1,11 @@
+__pycache__/
+.venv/
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.egg-info/
+build/
+dist/

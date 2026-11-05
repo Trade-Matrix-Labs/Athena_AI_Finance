@@ -1,0 +1,22 @@
+[project]
+name = "athena-app"
+version = "0.1.0"
+description = "Local Athena app: ingest a report delivery, store immutable editions, serve the Desk."
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = ["fastapi>=0.128", "uvicorn>=0.40"]
+
+[project.optional-dependencies]
+test = ["pytest>=9", "httpx>=0.28"]
+ask = ["langchain>=1.4", "langchain-openai>=1.6", "langgraph-checkpoint-sqlite>=3.1"]
+
+[tool.setuptools]
+packages = ["athena_app", "athena_app.migrations"]
+
+[tool.setuptools.package-data]
+"athena_app.migrations" = ["*.sql"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-p no:cacheprovider"

@@ -1,0 +1,4963 @@
+{
+ "version": "3",
+ "language": "en",
+ "status": "draft",
+ "revision": {
+  "number": 1,
+  "summary": "First edition"
+ },
+ "edition": {
+  "scope": "shared",
+  "number": 1,
+  "filing_accession": "0001321655-26-000011",
+  "created": "2026-10-31"
+ },
+ "filing": {
+  "issuer": "Palantir Technologies Inc.",
+  "ticker": "PLTR",
+  "form": "10-K",
+  "fiscal_year": 2025,
+  "period_end": "2025-12-31",
+  "accession": "0001321655-26-000011"
+ },
+ "cover": {
+  "headline": "Revenue grew {fact:revenue-growth-fy2025} and operating margin reached {fact:op-margin-fy2025}. Can it keep scaling?",
+  "standfirst": "Revenue, operating margin and operating cash flow all rose in 2025 [src-01] [src-08] [src-14], and the company had no outstanding debt balances at year end [src-77]. This sample report also looks at stock-based pay and concentration.",
+  "kpis": {
+   "kind": "kpis",
+   "id": "cover-kpis",
+   "items": [
+    {
+     "label": "Revenue",
+     "fact": "revenue-fy2025",
+     "delta": "revenue-growth-fy2025",
+     "compare": null,
+     "note": null
+    },
+    {
+     "label": "GAAP operating margin",
+     "fact": "op-margin-fy2025",
+     "delta": "op-margin-change-fy2025",
+     "compare": null,
+     "note": null
+    },
+    {
+     "label": "Operating cash flow",
+     "fact": "ocf-fy2025",
+     "delta": "ocf-growth-fy2025",
+     "compare": null,
+     "note": null
+    },
+    {
+     "label": "Diluted EPS",
+     "fact": "eps-diluted-fy2025",
+     "delta": null,
+     "compare": "eps-diluted-fy2024",
+     "note": null
+    },
+    {
+     "label": "Remaining performance obligations",
+     "fact": "rpo-fy2025",
+     "delta": null,
+     "compare": null,
+     "note": "As of 31 Dec 2025"
+    }
+   ]
+  },
+  "chart": {
+   "kind": "chart",
+   "id": "cover-chart",
+   "title": "Revenue and operating cash flow",
+   "subtitle": "Fiscal years 2023 to 2025; axis starts at zero",
+   "type": "bar",
+   "periods": [
+    "FY2023",
+    "FY2024",
+    "FY2025"
+   ],
+   "series": [
+    {
+     "label": "Revenue",
+     "facts": [
+      "revenue-fy2023",
+      "revenue-fy2024",
+      "revenue-fy2025"
+     ]
+    },
+    {
+     "label": "Operating cash flow",
+     "facts": [
+      "ocf-fy2023",
+      "ocf-fy2024",
+      "ocf-fy2025"
+     ]
+    }
+   ],
+   "caption": "Reported values [src-01] [src-14]."
+  }
+ },
+ "digest": [
+  {
+   "section": "business",
+   "keypoint": "Palantir served {fact:customers-fy2025} customers in 2025, up {fact:customers-growth-fy2025}, across {fact:segments-fy2025} segments: government and commercial.",
+   "facts": [
+    "customers-fy2025",
+    "customers-growth-fy2025",
+    "segments-fy2025"
+   ]
+  },
+  {
+   "section": "scorecard",
+   "keypoint": "Revenue grew {fact:revenue-growth-fy2025} while the GAAP operating margin moved from {fact:op-margin-fy2024} to {fact:op-margin-fy2025}.",
+   "facts": [
+    "revenue-growth-fy2025",
+    "op-margin-fy2024",
+    "op-margin-fy2025"
+   ]
+  },
+  {
+   "section": "profitability",
+   "keypoint": "Operating expenses grew {fact:opex-growth-fy2025} against revenue growth of {fact:revenue-growth-fy2025}, and income from operations rose to {fact:op-income-fy2025}.",
+   "facts": [
+    "opex-growth-fy2025",
+    "revenue-growth-fy2025",
+    "op-income-fy2025"
+   ]
+  },
+  {
+   "section": "segments",
+   "keypoint": "Commercial revenue grew {fact:com-revenue-growth-fy2025} and government revenue {fact:gov-revenue-growth-fy2025}; the commercial contribution margin was {fact:com-contribution-margin-fy2025}.",
+   "facts": [
+    "com-revenue-growth-fy2025",
+    "gov-revenue-growth-fy2025",
+    "com-contribution-margin-fy2025"
+   ]
+  },
+  {
+   "section": "earnings-quality",
+   "keypoint": "Operating cash flow was {fact:ocf-to-ni-fy2025} net income; stock-based compensation, added back as a noncash expense, was {fact:sbc-fy2025}.",
+   "facts": [
+    "ocf-to-ni-fy2025",
+    "sbc-fy2025"
+   ]
+  },
+  {
+   "section": "cash-flow",
+   "keypoint": "Operating cash flow rose {fact:ocf-growth-fy2025} to {fact:ocf-fy2025}; after stock compensation, simple free cash flow was {fact:fcf-after-sbc-fy2025}.",
+   "facts": [
+    "ocf-growth-fy2025",
+    "ocf-fy2025",
+    "fcf-after-sbc-fy2025"
+   ]
+  },
+  {
+   "section": "investment",
+   "keypoint": "Purchases of property and equipment were {fact:capex-share-fy2025} of revenue; net purchases of marketable securities were {fact:net-sec-purchases-fy2025}.",
+   "facts": [
+    "capex-share-fy2025",
+    "net-sec-purchases-fy2025"
+   ]
+  },
+  {
+   "section": "balance-sheet",
+   "keypoint": "Cash, cash equivalents and marketable securities were {fact:cash-and-securities-fy2025} at year end, against total liabilities of {fact:total-liabilities-fy2025}.",
+   "facts": [
+    "cash-and-securities-fy2025",
+    "total-liabilities-fy2025"
+   ]
+  },
+  {
+   "section": "shareholders",
+   "keypoint": "Weighted-average diluted shares rose {fact:wa-diluted-growth-fy2025} to {fact:wa-diluted-fy2025}, while buybacks were {fact:buyback-fy2025}.",
+   "facts": [
+    "wa-diluted-growth-fy2025",
+    "wa-diluted-fy2025",
+    "buyback-fy2025"
+   ]
+  },
+  {
+   "section": "demand",
+   "keypoint": "Remaining performance obligations were {fact:rpo-fy2025}, of which about {fact:rpo-12m-share-fy2025} is expected within twelve months.",
+   "facts": [
+    "rpo-fy2025",
+    "rpo-12m-share-fy2025"
+   ]
+  },
+  {
+   "section": "risks",
+   "keypoint": "No customer reached 10% of revenue, but {fact:us-share-fy2025} came from the United States and one customer held {fact:customer-i-ar-share-fy2025} of receivables.",
+   "facts": [
+    "us-share-fy2025",
+    "customer-i-ar-share-fy2025"
+   ]
+  },
+  {
+   "section": "valuation",
+   "keypoint": "The lab uses the cover-page share count, {fact:shares-out-feb2026}, and {fact:cash-and-securities-fy2025} of cash and securities; you supply the price.",
+   "facts": [
+    "shares-out-feb2026",
+    "cash-and-securities-fy2025"
+   ]
+  },
+  {
+   "section": "watchlist",
+   "keypoint": "Six questions to follow up, starting with whether {fact:rpo-fy2025} of RPO turns into revenue.",
+   "facts": [
+    "rpo-fy2025"
+   ]
+  }
+ ],
+ "sections": [
+  {
+   "id": "business",
+   "number": 1,
+   "title": "Business",
+   "question": "What does the company sell, and to whom?",
+   "keypoint": "Palantir served {fact:customers-fy2025} customers in 2025, up {fact:customers-growth-fy2025}, across {fact:segments-fy2025} segments: government and commercial.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "what",
+     "text": "Palantir says it builds software that empowers organizations to integrate their data, decisions and operations at scale [src-43]. It reports {fact:segments-fy2025} operating segments, government and commercial [src-44]."
+    },
+    {
+     "kind": "prose",
+     "id": "who",
+     "text": "A customer is an organization from which the company recognized revenue during the trailing twelve months [src-47]. On that basis the count rose from {fact:customers-fy2024} to {fact:customers-fy2025} [src-46] [src-45]. Average revenue from the top twenty customers was {fact:top20-avg-fy2025}, against {fact:top20-avg-fy2024} a year earlier [src-49]."
+    },
+    {
+     "kind": "table",
+     "id": "business-table",
+     "title": "Customers and people",
+     "columns": [
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Customers (trailing twelve months)",
+       "cells": [
+        "customers-fy2024",
+        "customers-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Average revenue per top-twenty customer",
+       "cells": [
+        "top20-avg-fy2024",
+        "top20-avg-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported in text [src-45] [src-46] [src-49]; the filing gives no customer count before FY2024."
+    },
+    {
+     "kind": "callout",
+     "id": "people",
+     "tone": "insight",
+     "title": "Scale per person",
+     "text": "The company had {fact:employees-fy2025} full-time employees at year end [src-48]. FY2025 revenue divided by that year-end headcount is {fact:revenue-per-employee-fy2025} per employee."
+    }
+   ]
+  },
+  {
+   "id": "scorecard",
+   "number": 2,
+   "title": "Scorecard",
+   "question": "How did the year score on growth, margins and cash?",
+   "keypoint": "Revenue grew {fact:revenue-growth-fy2025} while the GAAP operating margin moved from {fact:op-margin-fy2024} to {fact:op-margin-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "summary",
+     "text": "Three numbers frame the year. Revenue reached {fact:revenue-fy2025}, up {fact:revenue-growth-fy2025} [src-01]. Income from operations rose to {fact:op-income-fy2025} [src-08], and operating cash flow reached {fact:ocf-fy2025} [src-14]."
+    },
+    {
+     "kind": "table",
+     "id": "scorecard-table",
+     "title": "Three-year scorecard",
+     "columns": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Revenue",
+       "cells": [
+        "revenue-fy2023",
+        "revenue-fy2024",
+        "revenue-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Gross margin",
+       "cells": [
+        "gross-margin-fy2023",
+        "gross-margin-fy2024",
+        "gross-margin-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "GAAP operating margin",
+       "cells": [
+        "op-margin-fy2023",
+        "op-margin-fy2024",
+        "op-margin-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Net margin (attributable to common)",
+       "cells": [
+        "net-margin-fy2023",
+        "net-margin-fy2024",
+        "net-margin-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Operating cash flow",
+       "cells": [
+        "ocf-fy2023",
+        "ocf-fy2024",
+        "ocf-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Simple free cash flow",
+       "cells": [
+        "fcf-fy2023",
+        "fcf-fy2024",
+        "fcf-fy2025"
+       ],
+       "note": "Operating cash flow less purchases of property and equipment"
+      },
+      {
+       "label": "Free cash flow margin",
+       "cells": [
+        "fcf-margin-fy2023",
+        "fcf-margin-fy2024",
+        "fcf-margin-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Diluted EPS",
+       "cells": [
+        "eps-diluted-fy2023",
+        "eps-diluted-fy2024",
+        "eps-diluted-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Stock-based compensation as share of revenue",
+       "cells": [
+        "sbc-share-fy2023",
+        "sbc-share-fy2024",
+        "sbc-share-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-01] [src-03] [src-08] [src-11] [src-12] [src-14] [src-15] [src-17]; ratios calculated from them."
+    },
+    {
+     "kind": "chart",
+     "id": "margin-chart",
+     "title": "Margins",
+     "subtitle": "FY2023 to FY2025",
+     "type": "line",
+     "periods": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "series": [
+      {
+       "label": "Gross margin",
+       "facts": [
+        "gross-margin-fy2023",
+        "gross-margin-fy2024",
+        "gross-margin-fy2025"
+       ]
+      },
+      {
+       "label": "GAAP operating margin",
+       "facts": [
+        "op-margin-fy2023",
+        "op-margin-fy2024",
+        "op-margin-fy2025"
+       ]
+      },
+      {
+       "label": "Free cash flow margin",
+       "facts": [
+        "fcf-margin-fy2023",
+        "fcf-margin-fy2024",
+        "fcf-margin-fy2025"
+       ]
+      }
+     ],
+     "caption": "Calculated from reported values [src-01] [src-03] [src-08] [src-14]."
+    },
+    {
+     "kind": "callout",
+     "id": "eps",
+     "tone": "insight",
+     "title": "Per share",
+     "text": "Diluted earnings per share were {fact:eps-diluted-fy2025}, compared with {fact:eps-diluted-fy2024} in 2024 [src-12]."
+    }
+   ]
+  },
+  {
+   "id": "profitability",
+   "number": 3,
+   "title": "Profitability",
+   "question": "How did costs move against revenue?",
+   "keypoint": "Operating expenses grew {fact:opex-growth-fy2025} against revenue growth of {fact:revenue-growth-fy2025}, and income from operations rose to {fact:op-income-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "lev",
+     "text": "Gross profit rose to {fact:gross-profit-fy2025} [src-03]. Total operating expenses grew {fact:opex-growth-fy2025} to {fact:opex-fy2025} [src-07], while revenue grew {fact:revenue-growth-fy2025}. Income from operations rose from {fact:op-income-fy2024} to {fact:op-income-fy2025} [src-08]."
+    },
+    {
+     "kind": "table",
+     "id": "pl-table",
+     "title": "Statement of operations",
+     "columns": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Revenue",
+       "cells": [
+        "revenue-fy2023",
+        "revenue-fy2024",
+        "revenue-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Cost of revenue",
+       "cells": [
+        "cost-of-revenue-fy2023",
+        "cost-of-revenue-fy2024",
+        "cost-of-revenue-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Gross profit",
+       "cells": [
+        "gross-profit-fy2023",
+        "gross-profit-fy2024",
+        "gross-profit-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Sales and marketing",
+       "cells": [
+        "sm-fy2023",
+        "sm-fy2024",
+        "sm-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Research and development",
+       "cells": [
+        "rd-fy2023",
+        "rd-fy2024",
+        "rd-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "General and administrative",
+       "cells": [
+        "ga-fy2023",
+        "ga-fy2024",
+        "ga-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total operating expenses",
+       "cells": [
+        "opex-fy2023",
+        "opex-fy2024",
+        "opex-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Income from operations",
+       "cells": [
+        "op-income-fy2023",
+        "op-income-fy2024",
+        "op-income-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Net income attributable to common stockholders",
+       "cells": [
+        "ni-common-fy2023",
+        "ni-common-fy2024",
+        "ni-common-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-01] [src-02] [src-03] [src-04] [src-05] [src-06] [src-07] [src-08] [src-11]."
+    },
+    {
+     "kind": "table",
+     "id": "opex-share-table",
+     "title": "Operating expenses as a share of revenue",
+     "columns": [
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Sales and marketing",
+       "cells": [
+        "sm-share-fy2024",
+        "sm-share-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Research and development",
+       "cells": [
+        "rd-share-fy2024",
+        "rd-share-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "General and administrative",
+       "cells": [
+        "ga-share-fy2024",
+        "ga-share-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "GAAP operating margin",
+       "cells": [
+        "op-margin-fy2024",
+        "op-margin-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Calculated from reported values [src-01] [src-04] [src-05] [src-06]."
+    },
+    {
+     "kind": "prose",
+     "id": "nongaap",
+     "text": "The company also reports adjusted income from operations, a non-GAAP measure that excludes stock-based compensation and related employer payroll taxes [src-78]: {fact:adj-op-income-fy2025} against {fact:adj-op-income-fy2024} [src-51] [src-52], with an adjusted operating margin of {fact:adj-op-margin-fy2025} [src-53]."
+    },
+    {
+     "kind": "callout",
+     "id": "tax",
+     "tone": "insight",
+     "title": "Below the operating line",
+     "text": "Interest income of {fact:interest-income-fy2025} [src-09] was {fact:interest-share-pretax-fy2025} of pre-tax income of {fact:pretax-fy2025} [src-10]. The provision for income taxes was {fact:tax-fy2025}, an effective tax rate of {fact:etr-fy2025} [src-54]."
+    }
+   ]
+  },
+  {
+   "id": "segments",
+   "number": 4,
+   "title": "Segments",
+   "question": "How did each segment grow?",
+   "keypoint": "Commercial revenue grew {fact:com-revenue-growth-fy2025} and government revenue {fact:gov-revenue-growth-fy2025}; the commercial contribution margin was {fact:com-contribution-margin-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "mix",
+     "text": "Segment figures come from the segment note and are kept separate from the consolidated totals. Government revenue was {fact:gov-revenue-fy2025} [src-37] and commercial revenue {fact:com-revenue-fy2025} [src-38]."
+    },
+    {
+     "kind": "table",
+     "id": "segment-table",
+     "title": "Segment revenue and contribution",
+     "columns": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Government revenue",
+       "cells": [
+        "gov-revenue-fy2023",
+        "gov-revenue-fy2024",
+        "gov-revenue-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Commercial revenue",
+       "cells": [
+        "com-revenue-fy2023",
+        "com-revenue-fy2024",
+        "com-revenue-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total revenue (consolidated)",
+       "cells": [
+        "revenue-fy2023",
+        "revenue-fy2024",
+        "revenue-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Government contribution",
+       "cells": [
+        "gov-contribution-fy2023",
+        "gov-contribution-fy2024",
+        "gov-contribution-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Commercial contribution",
+       "cells": [
+        "com-contribution-fy2023",
+        "com-contribution-fy2024",
+        "com-contribution-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Government contribution margin",
+       "cells": [
+        "gov-contribution-margin-fy2023",
+        "gov-contribution-margin-fy2024",
+        "gov-contribution-margin-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Commercial contribution margin",
+       "cells": [
+        "com-contribution-margin-fy2023",
+        "com-contribution-margin-fy2024",
+        "com-contribution-margin-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Segment note [src-37] [src-38] [src-39] [src-40]; consolidated revenue [src-01]. Contribution margins as stated in the segment note. Contribution is segment revenue less the related cost of revenue and sales and marketing expenses."
+    },
+    {
+     "kind": "callout",
+     "id": "us",
+     "tone": "insight",
+     "title": "The United States",
+     "text": "Customers in the United States produced {fact:us-share-fy2025} of revenue, up from {fact:us-share-fy2024} [src-41]. Revenue from U.S. commercial customers was {fact:us-commercial-fy2025}, against {fact:us-commercial-fy2024} [src-42]; these are rounded text figures."
+    }
+   ]
+  },
+  {
+   "id": "earnings-quality",
+   "number": 5,
+   "title": "Earnings quality",
+   "question": "How does profit compare with operating cash flow, and what does stock pay cost?",
+   "keypoint": "Operating cash flow was {fact:ocf-to-ni-fy2025} net income; stock-based compensation, added back as a noncash expense, was {fact:sbc-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "bridge",
+     "text": "Net income attributable to common stockholders was {fact:ni-common-fy2025} [src-11] and operating cash flow {fact:ocf-fy2025} [src-14]. Stock-based compensation, which the company describes as a noncash expense [src-79], was {fact:sbc-fy2025} [src-15]. The increase in accounts receivable reduced operating cash flow by {fact:ar-change-fy2025} [src-16]."
+    },
+    {
+     "kind": "table",
+     "id": "quality-table",
+     "title": "Profit, cash and stock pay",
+     "columns": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Net income attributable to common stockholders",
+       "cells": [
+        "ni-common-fy2023",
+        "ni-common-fy2024",
+        "ni-common-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Operating cash flow",
+       "cells": [
+        "ocf-fy2023",
+        "ocf-fy2024",
+        "ocf-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Operating cash flow to net income",
+       "cells": [
+        "ocf-to-ni-fy2023",
+        "ocf-to-ni-fy2024",
+        "ocf-to-ni-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Stock-based compensation",
+       "cells": [
+        "sbc-fy2023",
+        "sbc-fy2024",
+        "sbc-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Stock-based compensation as share of revenue",
+       "cells": [
+        "sbc-share-fy2023",
+        "sbc-share-fy2024",
+        "sbc-share-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-11] [src-14] [src-15]; ratios calculated."
+    },
+    {
+     "kind": "callout",
+     "id": "payroll",
+     "tone": "insight",
+     "title": "Payroll taxes on stock pay",
+     "text": "Employer payroll taxes related to stock-based compensation were {fact:sbc-payroll-tax-fy2025}, against {fact:sbc-payroll-tax-fy2024} in 2024 [src-50]. Adjusted income from operations excludes both these taxes and the compensation itself [src-78]."
+    }
+   ]
+  },
+  {
+   "id": "cash-flow",
+   "number": 6,
+   "title": "Cash flow",
+   "question": "How much cash did the year produce?",
+   "keypoint": "Operating cash flow rose {fact:ocf-growth-fy2025} to {fact:ocf-fy2025}; after stock compensation, simple free cash flow was {fact:fcf-after-sbc-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "operating",
+     "text": "Operating cash flow reached {fact:ocf-fy2025}, up {fact:ocf-growth-fy2025} [src-14]. The company spent {fact:capex-fy2025} on property and equipment [src-17]. Simple free cash flow, operating cash flow less those purchases, was {fact:fcf-fy2025}, or {fact:fcf-margin-fy2025} of revenue."
+    },
+    {
+     "kind": "table",
+     "id": "cash-table",
+     "title": "Cash generation",
+     "columns": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Operating cash flow",
+       "cells": [
+        "ocf-fy2023",
+        "ocf-fy2024",
+        "ocf-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Purchases of property and equipment",
+       "cells": [
+        "capex-fy2023",
+        "capex-fy2024",
+        "capex-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Simple free cash flow",
+       "cells": [
+        "fcf-fy2023",
+        "fcf-fy2024",
+        "fcf-fy2025"
+       ],
+       "note": "Operating cash flow less purchases of property and equipment"
+      },
+      {
+       "label": "Free cash flow margin",
+       "cells": [
+        "fcf-margin-fy2023",
+        "fcf-margin-fy2024",
+        "fcf-margin-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Stock-based compensation",
+       "cells": [
+        "sbc-fy2023",
+        "sbc-fy2024",
+        "sbc-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-14] [src-15] [src-17]; free cash flow lines calculated."
+    },
+    {
+     "kind": "chart",
+     "id": "cash-chart",
+     "title": "Net income, operating cash flow and free cash flow",
+     "subtitle": "FY2023 to FY2025; axis starts at zero",
+     "type": "bar",
+     "periods": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "series": [
+      {
+       "label": "Net income attributable to common",
+       "facts": [
+        "ni-common-fy2023",
+        "ni-common-fy2024",
+        "ni-common-fy2025"
+       ]
+      },
+      {
+       "label": "Operating cash flow",
+       "facts": [
+        "ocf-fy2023",
+        "ocf-fy2024",
+        "ocf-fy2025"
+       ]
+      },
+      {
+       "label": "Simple free cash flow",
+       "facts": [
+        "fcf-fy2023",
+        "fcf-fy2024",
+        "fcf-fy2025"
+       ]
+      }
+     ],
+     "caption": "Reported values [src-11] [src-14] [src-17]; free cash flow calculated."
+    },
+    {
+     "kind": "prose",
+     "id": "where",
+     "text": "Cash, cash equivalents and restricted cash decreased by {fact:cash-decrease-fy2025} [src-25]. Investing activities used {fact:investing-outflow-fy2025} [src-21], including net purchases of marketable securities of {fact:net-sec-purchases-fy2025} [src-18] [src-19]."
+    }
+   ]
+  },
+  {
+   "id": "investment",
+   "number": 7,
+   "title": "Investment",
+   "question": "What is the company investing in?",
+   "keypoint": "Purchases of property and equipment were {fact:capex-share-fy2025} of revenue; net purchases of marketable securities were {fact:net-sec-purchases-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "light",
+     "text": "The company spent {fact:capex-fy2025} on property and equipment [src-17]; research and development expense, reported in the statement of operations, was {fact:rd-fy2025} [src-05]. It also spent {fact:private-sec-fy2025} on privately-held securities [src-20]."
+    },
+    {
+     "kind": "table",
+     "id": "investment-table",
+     "title": "Investing cash flows, FY2025",
+     "columns": [
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Purchases of property and equipment",
+       "cells": [
+        "capex-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Purchases of marketable securities",
+       "cells": [
+        "sec-purchases-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Proceeds from sales and redemption of marketable securities",
+       "cells": [
+        "sec-proceeds-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Purchases of privately-held securities",
+       "cells": [
+        "private-sec-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Net cash from investing activities",
+       "cells": [
+        "investing-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-17] [src-18] [src-19] [src-20] [src-21]; outflows in parentheses, as in the cash flow statement."
+    },
+    {
+     "kind": "callout",
+     "id": "cloud",
+     "tone": "insight",
+     "title": "Cloud hosting commitment",
+     "text": "Under one third-party cloud services agreement, the company has committed to spend at least {fact:cloud-commitment-fy2025} over ten contract years through 30 September 2033 [src-76]."
+    }
+   ]
+  },
+  {
+   "id": "balance-sheet",
+   "number": 8,
+   "title": "Balance sheet",
+   "question": "What was the financial position at year end?",
+   "keypoint": "Cash, cash equivalents and marketable securities were {fact:cash-and-securities-fy2025} at year end, against total liabilities of {fact:total-liabilities-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "liquidity",
+     "text": "Cash and cash equivalents of {fact:cash-fy2025} [src-26] and marketable securities of {fact:securities-fy2025} [src-27] add up to {fact:cash-and-securities-fy2025}. The company describes its liquidity as {fact:liquidity-text-fy2025} of cash, cash equivalents and short-term U.S. Treasury securities [src-36]."
+    },
+    {
+     "kind": "table",
+     "id": "bs-table",
+     "title": "Balance sheet",
+     "columns": [
+      "31 Dec 2024",
+      "31 Dec 2025"
+     ],
+     "rows": [
+      {
+       "label": "Cash and cash equivalents",
+       "cells": [
+        "cash-fy2024",
+        "cash-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Marketable securities",
+       "cells": [
+        "securities-fy2024",
+        "securities-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Cash, cash equivalents and marketable securities",
+       "cells": [
+        "cash-and-securities-fy2024",
+        "cash-and-securities-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Accounts receivable, net",
+       "cells": [
+        "ar-fy2024",
+        "ar-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total current assets",
+       "cells": [
+        "current-assets-fy2024",
+        "current-assets-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total assets",
+       "cells": [
+        "total-assets-fy2024",
+        "total-assets-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total current liabilities",
+       "cells": [
+        "current-liabilities-fy2024",
+        "current-liabilities-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total liabilities",
+       "cells": [
+        "total-liabilities-fy2024",
+        "total-liabilities-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total Palantir stockholders' equity",
+       "cells": [
+        "equity-fy2024",
+        "equity-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-26] [src-27] [src-28] [src-29] [src-30] [src-31] [src-32] [src-33]; sum calculated."
+    },
+    {
+     "kind": "chart",
+     "id": "bs-chart",
+     "title": "Liquid assets and liabilities",
+     "subtitle": "Year-end positions; axis starts at zero",
+     "type": "bar",
+     "periods": [
+      "31 Dec 2024",
+      "31 Dec 2025"
+     ],
+     "series": [
+      {
+       "label": "Cash, cash equivalents and marketable securities",
+       "facts": [
+        "cash-and-securities-fy2024",
+        "cash-and-securities-fy2025"
+       ]
+      },
+      {
+       "label": "Total liabilities",
+       "facts": [
+        "total-liabilities-fy2024",
+        "total-liabilities-fy2025"
+       ]
+      }
+     ],
+     "caption": "Reported values [src-26] [src-27] [src-32]; sum calculated."
+    },
+    {
+     "kind": "prose",
+     "id": "receivables",
+     "text": "Accounts receivable grew {fact:ar-growth-fy2025} to {fact:ar-fy2025} [src-28]; revenue grew {fact:revenue-growth-fy2025}. Liabilities were {fact:liabilities-to-assets-fy2025} of total assets."
+    },
+    {
+     "kind": "callout",
+     "id": "debt",
+     "tone": "insight",
+     "title": "No outstanding debt",
+     "text": "The revolving credit facility provides {fact:revolver-capacity-fy2025} of commitments [src-34], with no outstanding debt balances under it at year end [src-35]. The company had no outstanding debt balances at year end [src-77]."
+    }
+   ]
+  },
+  {
+   "id": "shareholders",
+   "number": 9,
+   "title": "Shareholders",
+   "question": "What happened to the share count?",
+   "keypoint": "Weighted-average diluted shares rose {fact:wa-diluted-growth-fy2025} to {fact:wa-diluted-fy2025}, while buybacks were {fact:buyback-fy2025}.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "count",
+     "text": "Shares issued and outstanding across all classes were {fact:shares-issued-fy2025} at year end, up from {fact:shares-issued-fy2024} [src-57]. The diluted weighted average used for earnings per share was {fact:wa-diluted-fy2025} [src-13]."
+    },
+    {
+     "kind": "table",
+     "id": "share-table",
+     "title": "Share count and capital returned",
+     "columns": [
+      "FY2023",
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Weighted-average diluted shares",
+       "cells": [
+        "wa-diluted-fy2023",
+        "wa-diluted-fy2024",
+        "wa-diluted-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Repurchases of common stock",
+       "cells": [
+        "buyback-fy2023",
+        "buyback-fy2024",
+        "buyback-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Taxes paid on net share settlement",
+       "cells": [
+        "share-tax-fy2023",
+        "share-tax-fy2024",
+        "share-tax-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Proceeds from option exercises",
+       "cells": [
+        "option-proceeds-fy2023",
+        "option-proceeds-fy2024",
+        "option-proceeds-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-13] [src-22] [src-23] [src-24]."
+    },
+    {
+     "kind": "callout",
+     "id": "control",
+     "tone": "insight",
+     "title": "Voting control",
+     "text": "The Class F stock generally gives the founders the ability to control up to {fact:class-f-voting-fy2025} of the total voting power, subject to a minimum ownership threshold [src-58]. In January 2026 the company ended its share repurchase program [src-59]; cash spent on buybacks and share-settlement taxes in 2025 was {fact:buyback-plus-tax-fy2025}."
+    }
+   ]
+  },
+  {
+   "id": "demand",
+   "number": 10,
+   "title": "Demand",
+   "question": "How much contracted revenue is waiting to be recognized?",
+   "keypoint": "Remaining performance obligations were {fact:rpo-fy2025}, of which about {fact:rpo-12m-share-fy2025} is expected within twelve months.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "rpo",
+     "text": "Remaining performance obligations (RPO) represent noncancelable contracted revenue not yet recognized [src-67]. They stood at {fact:rpo-fy2025} [src-60]; against FY2025 revenue that is {fact:rpo-to-revenue-fy2025}. Total remaining deal value presumes the exercise of all contract options and no termination of contracts [src-64]; it was {fact:trdv-fy2025}, against {fact:trdv-fy2024} [src-62]."
+    },
+    {
+     "kind": "table",
+     "id": "demand-table",
+     "title": "Contracted and expected revenue",
+     "columns": [
+      "31 Dec 2025"
+     ],
+     "rows": [
+      {
+       "label": "Remaining performance obligations",
+       "cells": [
+        "rpo-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Share of RPO expected within 12 months",
+       "cells": [
+        "rpo-12m-share-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Share of RPO expected in months 13 to 36",
+       "cells": [
+        "rpo-13-36m-share-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Contract liabilities",
+       "cells": [
+        "contract-liabilities-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Total remaining deal value",
+       "cells": [
+        "trdv-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Remaining deal value, commercial",
+       "cells": [
+        "trdv-commercial-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Remaining deal value, government",
+       "cells": [
+        "trdv-government-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Amounts as stated in the filing, in $ billions or $ millions: RPO and contract liabilities [src-60] [src-61]; deal value [src-62] [src-63]. The filing gives no prior-year RPO."
+    },
+    {
+     "kind": "callout",
+     "id": "cl",
+     "tone": "insight",
+     "title": "Deferred revenue and customer deposits",
+     "text": "Contract liabilities, which consist of deferred revenue and customer deposits [src-66], grew {fact:contract-liabilities-growth-fy2025} to {fact:contract-liabilities-fy2025}, from {fact:contract-liabilities-fy2024} [src-61]."
+    }
+   ]
+  },
+  {
+   "id": "risks",
+   "number": 11,
+   "title": "Risks",
+   "question": "Which risks does the filing highlight?",
+   "keypoint": "No customer reached 10% of revenue, but {fact:us-share-fy2025} came from the United States and one customer held {fact:customer-i-ar-share-fy2025} of receivables.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "intro",
+     "text": "The company lists many risks in Item 1A. Six are paraphrased below, each with its filing wording in the source note. The U.S. share of revenue was {fact:us-share-fy2023} in 2023 [src-41]. No single customer reached 10% of revenue in any of the three years [src-75]."
+    },
+    {
+     "kind": "callout",
+     "id": "r1",
+     "tone": "insight",
+     "title": "Growth may slow",
+     "text": "The company may not be able to sustain its revenue growth [src-68]; revenue grew {fact:revenue-growth-fy2025} in 2025."
+    },
+    {
+     "kind": "callout",
+     "id": "r2",
+     "tone": "insight",
+     "title": "A few large customers",
+     "text": "A limited number of customers account for a substantial portion of revenue [src-69]. Customer I represented {fact:customer-i-ar-share-fy2025} of accounts receivable at 31 Dec 2025, against {fact:customer-i-ar-share-fy2024} a year earlier [src-74]."
+    },
+    {
+     "kind": "callout",
+     "id": "r3",
+     "tone": "insight",
+     "title": "Deal value is not guaranteed",
+     "text": "The company may not realize the full deal value of its contracts [src-70]; total remaining deal value was {fact:trdv-fy2025}."
+    },
+    {
+     "kind": "callout",
+     "id": "r4",
+     "tone": "insight",
+     "title": "Contracts can be cancelled",
+     "text": "Many customer contracts may be terminated by the customer at any time for convenience [src-71]."
+    },
+    {
+     "kind": "callout",
+     "id": "r5",
+     "tone": "insight",
+     "title": "Public-sector exposure",
+     "text": "The company may fail to win or keep government contracts, and public-sector contracting or fiscal policies may change [src-72]; government segment revenue was {fact:gov-revenue-fy2025} in 2025 [src-37]."
+    },
+    {
+     "kind": "callout",
+     "id": "r6",
+     "tone": "insight",
+     "title": "Concentrated voting power",
+     "text": "The multi-class share structure and founder voting agreements concentrate voting power with certain stockholders [src-73]; the Class F stock generally gives the founders the ability to control up to {fact:class-f-voting-fy2025} of the total voting power [src-58]."
+    },
+    {
+     "kind": "table",
+     "id": "concentration-table",
+     "title": "Concentration figures",
+     "columns": [
+      "FY2024",
+      "FY2025"
+     ],
+     "rows": [
+      {
+       "label": "Share of revenue from United States customers",
+       "cells": [
+        "us-share-fy2024",
+        "us-share-fy2025"
+       ],
+       "note": null
+      },
+      {
+       "label": "Customer I share of accounts receivable",
+       "cells": [
+        "customer-i-ar-share-fy2024",
+        "customer-i-ar-share-fy2025"
+       ],
+       "note": null
+      }
+     ],
+     "caption": "Reported values [src-41] [src-74]."
+    }
+   ]
+  },
+  {
+   "id": "valuation",
+   "number": 12,
+   "title": "Valuation lab",
+   "question": "What would a given share price imply?",
+   "keypoint": "The lab uses the cover-page share count, {fact:shares-out-feb2026}, and {fact:cash-and-securities-fy2025} of cash and securities; you supply the price.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "how",
+     "text": "The filing contains no share price, so this lab only computes from a price you type. Market value uses the count of all share classes outstanding on the cover-page date, {fact:shares-out-feb2026} [src-55] [src-56]. A second line uses the FY2025 weighted-average count used in computing diluted earnings per share, {fact:wa-diluted-fy2025} [src-13]."
+    },
+    {
+     "kind": "prose",
+     "id": "cash",
+     "text": "Enterprise value subtracts cash, cash equivalents and marketable securities of {fact:cash-and-securities-fy2025} [src-26] [src-27] and adds no debt, because the company had no outstanding debt balances at year end [src-77]. Noncontrolling interests and leases are left out to keep the arithmetic plain."
+    },
+    {
+     "kind": "lab",
+     "id": "price-lab",
+     "inputs": [
+      "price"
+     ],
+     "outputs": [
+      {
+       "label": "Market value (cover-page shares)",
+       "formula": "price * shares-out-feb2026",
+       "inputs": [
+        "price",
+        "shares-out-feb2026"
+       ],
+       "unit": "usd"
+      },
+      {
+       "label": "Market value (diluted weighted-average shares)",
+       "formula": "price * wa-diluted-fy2025",
+       "inputs": [
+        "price",
+        "wa-diluted-fy2025"
+       ],
+       "unit": "usd"
+      },
+      {
+       "label": "Enterprise value",
+       "formula": "price * shares-out-feb2026 - cash-and-securities-fy2025",
+       "inputs": [
+        "price",
+        "shares-out-feb2026",
+        "cash-and-securities-fy2025"
+       ],
+       "unit": "usd"
+      },
+      {
+       "label": "EV / FY2025 revenue",
+       "formula": "(price * shares-out-feb2026 - cash-and-securities-fy2025) / revenue-fy2025",
+       "inputs": [
+        "price",
+        "shares-out-feb2026",
+        "cash-and-securities-fy2025",
+        "revenue-fy2025"
+       ],
+       "unit": "multiple"
+      },
+      {
+       "label": "Price / FY2025 diluted EPS",
+       "formula": "price / eps-diluted-fy2025",
+       "inputs": [
+        "price",
+        "eps-diluted-fy2025"
+       ],
+       "unit": "multiple"
+      },
+      {
+       "label": "FY2025 free cash flow yield",
+       "formula": "fcf-fy2025 / (price * shares-out-feb2026)",
+       "inputs": [
+        "fcf-fy2025",
+        "price",
+        "shares-out-feb2026"
+       ],
+       "unit": "ratio"
+      },
+      {
+       "label": "Price / book",
+       "formula": "price * shares-out-feb2026 / equity-fy2025",
+       "inputs": [
+        "price",
+        "shares-out-feb2026",
+        "equity-fy2025"
+       ],
+       "unit": "multiple"
+      }
+     ]
+    },
+    {
+     "kind": "callout",
+     "id": "label",
+     "tone": "insight",
+     "title": "Your number, not the filing's",
+     "text": "Every lab output uses the price you enter. The filing figures behind it are diluted EPS of {fact:eps-diluted-fy2025}, revenue of {fact:revenue-fy2025} and simple free cash flow of {fact:fcf-fy2025}."
+    }
+   ]
+  },
+  {
+   "id": "watchlist",
+   "number": 13,
+   "title": "Watchlist",
+   "question": "What should a reader check in the next filing?",
+   "keypoint": "Six questions to follow up, starting with whether {fact:rpo-fy2025} of RPO turns into revenue.",
+   "blocks": [
+    {
+     "kind": "prose",
+     "id": "w1",
+     "text": "**Does contracted revenue convert?** RPO was {fact:rpo-fy2025}, with {fact:rpo-12m-share-fy2025} expected within twelve months [src-60]."
+    },
+    {
+     "kind": "prose",
+     "id": "w2",
+     "text": "**Does U.S. commercial demand hold?** U.S. commercial revenue was {fact:us-commercial-fy2025}, up {fact:us-commercial-growth-fy2025} [src-42]."
+    },
+    {
+     "kind": "prose",
+     "id": "w3",
+     "text": "**What does stock pay cost per share?** Stock-based compensation was {fact:sbc-fy2025} [src-15] and diluted weighted-average shares rose {fact:wa-diluted-growth-fy2025} [src-13]."
+    },
+    {
+     "kind": "prose",
+     "id": "w4",
+     "text": "**Do receivables keep pace with revenue?** Receivables grew {fact:ar-growth-fy2025} while revenue grew {fact:revenue-growth-fy2025} [src-28] [src-01]."
+    },
+    {
+     "kind": "prose",
+     "id": "w5",
+     "text": "**How much profit comes from interest?** Interest income was {fact:interest-share-pretax-fy2025} of pre-tax income [src-09] [src-10]."
+    },
+    {
+     "kind": "prose",
+     "id": "w6",
+     "text": "**How does the tax rate move?** The effective tax rate was {fact:etr-fy2025} [src-54]; the tax note in the next filing shows whether it changes."
+    }
+   ]
+  }
+ ],
+ "glossary": [
+  {
+   "term": "Remaining performance obligations (RPO)",
+   "definition": "Noncancelable contracted revenue not yet recognized [src-67]: {fact:rpo-fy2025} at year end.",
+   "facts": [
+    "rpo-fy2025"
+   ]
+  },
+  {
+   "term": "Total remaining deal value",
+   "definition": "The remaining value of the company's contracts, presuming the exercise of all contract options and no termination of contracts [src-64]: {fact:trdv-fy2025}.",
+   "facts": [
+    "trdv-fy2025"
+   ]
+  },
+  {
+   "term": "Customer",
+   "definition": "An organization from which the company recognized revenue during the trailing twelve months [src-47].",
+   "facts": [
+    "customers-fy2025"
+   ]
+  },
+  {
+   "term": "Contribution",
+   "definition": "Segment revenue less the related costs of revenue and sales and marketing expenses [src-65].",
+   "facts": [
+    "gov-contribution-fy2025",
+    "com-contribution-fy2025"
+   ]
+  },
+  {
+   "term": "Adjusted income from operations",
+   "definition": "A non-GAAP measure that excludes stock-based compensation and related employer payroll taxes [src-78]: {fact:adj-op-income-fy2025} in 2025.",
+   "facts": [
+    "adj-op-income-fy2025"
+   ]
+  },
+  {
+   "term": "Simple free cash flow",
+   "definition": "Operating cash flow less purchases of property and equipment, calculated here: {fact:fcf-fy2025}.",
+   "facts": [
+    "fcf-fy2025"
+   ]
+  },
+  {
+   "term": "Stock-based compensation",
+   "definition": "Compensation paid in shares or share-based awards, recorded as an expense: {fact:sbc-fy2025} in 2025.",
+   "facts": [
+    "sbc-fy2025"
+   ]
+  },
+  {
+   "term": "Contract liabilities",
+   "definition": "Deferred revenue and customer deposits [src-66]: {fact:contract-liabilities-fy2025} at 31 Dec 2025.",
+   "facts": [
+    "contract-liabilities-fy2025"
+   ]
+  },
+  {
+   "term": "Diluted weighted-average shares",
+   "definition": "The weighted-average share count used in computing diluted earnings per share [src-13]: {fact:wa-diluted-fy2025}.",
+   "facts": [
+    "wa-diluted-fy2025"
+   ]
+  },
+  {
+   "term": "Enterprise value",
+   "definition": "Market value less cash and marketable securities plus debt; computed in the lab from your price.",
+   "facts": [
+    "cash-and-securities-fy2025"
+   ]
+  }
+ ],
+ "assumptions": [
+  {
+   "id": "price",
+   "label": "Share price",
+   "unit": "usd_per_share",
+   "why": "Not in the filing. You enter it."
+  }
+ ],
+ "sources": [
+  {
+   "id": "src-01",
+   "label": "Revenue",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Revenue $ 4,475,446 $ 2,865,507 $ 2,225,012"
+  },
+  {
+   "id": "src-02",
+   "label": "Cost of revenue",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Cost of revenue 789,177 565,990 431,105"
+  },
+  {
+   "id": "src-03",
+   "label": "Gross profit",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Gross profit 3,686,269 2,299,517 1,793,907"
+  },
+  {
+   "id": "src-04",
+   "label": "Sales and marketing",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Sales and marketing 1,056,859 887,755 744,992"
+  },
+  {
+   "id": "src-05",
+   "label": "Research and development",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Research and development 557,677 507,878 404,624"
+  },
+  {
+   "id": "src-06",
+   "label": "General and administrative",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "General and administrative 657,718 593,481 524,325"
+  },
+  {
+   "id": "src-07",
+   "label": "Total operating expenses",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Total operating expenses 2,272,254 1,989,114 1,673,941"
+  },
+  {
+   "id": "src-08",
+   "label": "Income from operations",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Income from operations 1,414,015 310,403 119,966"
+  },
+  {
+   "id": "src-09",
+   "label": "Interest income",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Interest income 229,181 196,792 132,572"
+  },
+  {
+   "id": "src-10",
+   "label": "Income before taxes",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Income before provision for income taxes 1,657,368 489,173 237,091 Provision for income taxes 22,724 21,255 19,716"
+  },
+  {
+   "id": "src-11",
+   "label": "Net income attributable to common stockholders",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Net income attributable to common stockholders $ 1,625,033 $ 462,190 $ 209,825"
+  },
+  {
+   "id": "src-12",
+   "label": "Diluted earnings per share",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Earnings per share attributable to common stockholders, diluted $ 0.63 $ 0.19 $ 0.09"
+  },
+  {
+   "id": "src-13",
+   "label": "Diluted weighted-average shares",
+   "locator": "Item 8 · Consolidated Statements of Operations",
+   "accession": "0001321655-26-000011",
+   "quote": "Weighted-average shares of common stock outstanding used in computing earnings per share attributable to common stockholders, diluted 2,565,197 2,450,818 2,297,927"
+  },
+  {
+   "id": "src-14",
+   "label": "Operating cash flow",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Net cash provided by operating activities 2,134,473 1,153,865 712,183"
+  },
+  {
+   "id": "src-15",
+   "label": "Stock-based compensation",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Stock-based compensation 684,033 691,638 475,903"
+  },
+  {
+   "id": "src-16",
+   "label": "Change in accounts receivable",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Accounts receivable, net (450,429) (211,157) (106,159)"
+  },
+  {
+   "id": "src-17",
+   "label": "Purchases of property and equipment",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Purchases of property and equipment (33,882) (12,634) (15,114)"
+  },
+  {
+   "id": "src-18",
+   "label": "Purchases of marketable securities",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Purchases of marketable securities (7,702,060) (5,395,913) (5,636,406)"
+  },
+  {
+   "id": "src-19",
+   "label": "Proceeds from marketable securities",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Proceeds from sales and redemption of marketable securities 5,026,315 5,073,507 2,889,268"
+  },
+  {
+   "id": "src-20",
+   "label": "Purchases of privately-held securities",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Purchases of privately-held securities (72,924) (5,615) —"
+  },
+  {
+   "id": "src-21",
+   "label": "Net cash used in investing activities",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Net cash used in investing activities (2,783,551) (340,655) (2,711,180)"
+  },
+  {
+   "id": "src-22",
+   "label": "Proceeds from option exercises",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Proceeds from the exercise of common stock options 129,107 745,396 218,238"
+  },
+  {
+   "id": "src-23",
+   "label": "Repurchases of common stock",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Repurchases of common stock (74,985) (64,196) —"
+  },
+  {
+   "id": "src-24",
+   "label": "Taxes paid on net share settlement",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Taxes paid related to net share settlement of equity awards (81,117) (218,280) —"
+  },
+  {
+   "id": "src-25",
+   "label": "Net change in cash",
+   "locator": "Item 8 · Consolidated Statements of Cash Flows",
+   "accession": "0001321655-26-000011",
+   "quote": "Net increase (decrease) in cash, cash equivalents, and restricted cash (668,511) 1,269,829 (1,777,228)"
+  },
+  {
+   "id": "src-26",
+   "label": "Cash and cash equivalents",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Cash and cash equivalents $ 1,423,796 $ 2,098,524"
+  },
+  {
+   "id": "src-27",
+   "label": "Marketable securities",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Marketable securities 5,753,247 3,131,463"
+  },
+  {
+   "id": "src-28",
+   "label": "Accounts receivable",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Accounts receivable, net 1,042,065 575,048"
+  },
+  {
+   "id": "src-29",
+   "label": "Total current assets",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Total current assets 8,358,174 5,934,289"
+  },
+  {
+   "id": "src-30",
+   "label": "Total assets",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Total assets $ 8,900,392 $ 6,340,884"
+  },
+  {
+   "id": "src-31",
+   "label": "Total current liabilities",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Total current liabilities 1,175,581 996,018"
+  },
+  {
+   "id": "src-32",
+   "label": "Total liabilities",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Total liabilities 1,412,381 1,246,477"
+  },
+  {
+   "id": "src-33",
+   "label": "Stockholders' equity",
+   "locator": "Item 8 · Consolidated Balance Sheets",
+   "accession": "0001321655-26-000011",
+   "quote": "Total Palantir's stockholders’ equity 7,387,268 5,003,275"
+  },
+  {
+   "id": "src-34",
+   "label": "Credit facility",
+   "locator": "Item 8 · Note 6 Debt",
+   "accession": "0001321655-26-000011",
+   "quote": "The Company has a secured revolving credit facility, which provides for aggregate revolving commitments of $500.0 million and has a maturity date of March 31, 2027"
+  },
+  {
+   "id": "src-35",
+   "label": "No outstanding debt",
+   "locator": "Item 8 · Note 6 Debt",
+   "accession": "0001321655-26-000011",
+   "quote": "As of December 31, 2025, the Company had no outstanding debt balances under the 2014 Credit Facility."
+  },
+  {
+   "id": "src-36",
+   "label": "Liquidity",
+   "locator": "Item 7 · Liquidity and capital resources",
+   "accession": "0001321655-26-000011",
+   "quote": "As of December 31, 2025, our principal sources of liquidity were cash, cash equivalents, and short-term U.S. Treasury securities totaling $7.2 billion."
+  },
+  {
+   "id": "src-37",
+   "label": "Government revenue",
+   "locator": "Item 8 · Note 13 Segment and Geographic Information",
+   "accession": "0001321655-26-000011",
+   "quote": "Government revenue $ 2,402,287 $ 1,569,605 $ 1,222,215"
+  },
+  {
+   "id": "src-38",
+   "label": "Commercial revenue",
+   "locator": "Item 8 · Note 13 Segment and Geographic Information",
+   "accession": "0001321655-26-000011",
+   "quote": "Commercial revenue 2,073,159 1,295,902 1,002,797"
+  },
+  {
+   "id": "src-39",
+   "label": "Government contribution",
+   "locator": "Item 8 · Note 13 Segment and Geographic Information",
+   "accession": "0001321655-26-000011",
+   "quote": "Government contribution 1,576,070 66 % 948,440 60 % 724,970 59 %"
+  },
+  {
+   "id": "src-40",
+   "label": "Commercial contribution",
+   "locator": "Item 8 · Note 13 Segment and Geographic Information",
+   "accession": "0001321655-26-000011",
+   "quote": "Commercial contribution 1,366,627 66 % 771,508 60 % 520,585 52 %"
+  },
+  {
+   "id": "src-41",
+   "label": "Revenue from the United States",
+   "locator": "Item 8 · Note 13 Segment and Geographic Information",
+   "accession": "0001321655-26-000011",
+   "quote": "United States $ 3,320,043 74 % $ 1,900,247 66 % $ 1,378,247 62 %"
+  },
+  {
+   "id": "src-42",
+   "label": "U.S. commercial revenue",
+   "locator": "Item 7 · Comparison of the years ended December 31, 2025 and 2024",
+   "accession": "0001321655-26-000011",
+   "quote": "Revenue from U.S. commercial customers was $1.5 billion for the year ended December 31, 2025 compared to $702.3 million for the same period in 2024, a 109% increase."
+  },
+  {
+   "id": "src-43",
+   "label": "Business overview",
+   "locator": "Item 1 · Overview",
+   "accession": "0001321655-26-000011",
+   "quote": "We build software that empowers organizations to effectively integrate their data, decisions, and operations at scale."
+  },
+  {
+   "id": "src-44",
+   "label": "Operating segments",
+   "locator": "Item 8 · Note 2 Significant accounting policies",
+   "accession": "0001321655-26-000011",
+   "quote": "The Company has two operating segments, commercial and government"
+  },
+  {
+   "id": "src-45",
+   "label": "Customers, 2025",
+   "locator": "Item 7 · Our customers",
+   "accession": "0001321655-26-000011",
+   "quote": "During the period ended December 31, 2025, we had 954 customers"
+  },
+  {
+   "id": "src-46",
+   "label": "Customers, 2024",
+   "locator": "Item 7 · Our customers",
+   "accession": "0001321655-26-000011",
+   "quote": "During the period ended December 31, 2024, we had 711 customers."
+  },
+  {
+   "id": "src-47",
+   "label": "Customer definition",
+   "locator": "Item 7 · Our customers",
+   "accession": "0001321655-26-000011",
+   "quote": "We define a customer as an organization from which we have recognized revenue during the trailing twelve-month period."
+  },
+  {
+   "id": "src-48",
+   "label": "Employees",
+   "locator": "Item 1 · Employees and human capital",
+   "accession": "0001321655-26-000011",
+   "quote": "As of December 31, 2025, we had 4,429 full-time employees, 28% of whom are employed outside of the United States."
+  },
+  {
+   "id": "src-49",
+   "label": "Top twenty customers",
+   "locator": "Item 7 · Our customers",
+   "accession": "0001321655-26-000011",
+   "quote": "Our average revenue for the top twenty customers during the trailing twelve months ended December 31, 2025 was $93.9 million, which grew 45% from an average of $64.6 million"
+  },
+  {
+   "id": "src-50",
+   "label": "Payroll taxes on stock-based compensation",
+   "locator": "Item 7 · Non-GAAP reconciliations",
+   "accession": "0001321655-26-000011",
+   "quote": "Add: employer payroll taxes related to stock-based compensation 156,052 126,021"
+  },
+  {
+   "id": "src-51",
+   "label": "Adjusted income from operations, 2025",
+   "locator": "Item 7 · Overview",
+   "accession": "0001321655-26-000011",
+   "quote": "In the year ended December 31, 2025, we generated income from operations of $1.4 billion, or adjusted income from operations of $2.3 billion"
+  },
+  {
+   "id": "src-52",
+   "label": "Adjusted income from operations, 2024",
+   "locator": "Item 7 · Overview",
+   "accession": "0001321655-26-000011",
+   "quote": "In the year ended December 31, 2024, we generated income from operations of $310.4 million, or adjusted income from operations of $1.1 billion"
+  },
+  {
+   "id": "src-53",
+   "label": "Adjusted operating margin",
+   "locator": "Item 7 · Non-GAAP reconciliations",
+   "accession": "0001321655-26-000011",
+   "quote": "Adjusted income from operations $ 2,254,100 $ 1,128,062 Adjusted operating margin 50 % 39 %"
+  },
+  {
+   "id": "src-54",
+   "label": "Effective tax rate",
+   "locator": "Item 8 · Note 11 Taxes",
+   "accession": "0001321655-26-000011",
+   "quote": "Total provision for income taxes and effective tax rate $ 22,724 1.4 %"
+  },
+  {
+   "id": "src-55",
+   "label": "Shares outstanding (cover page)",
+   "locator": "Cover page",
+   "accession": "0001321655-26-000011",
+   "quote": "As of February 10, 2026, there were 2,291,470,751 shares of the registrants’ Class A common stock outstanding, 99,199,960 shares of the registrant’s Class B common stock outstanding"
+  },
+  {
+   "id": "src-56",
+   "label": "Class F shares (cover page)",
+   "locator": "Cover page",
+   "accession": "0001321655-26-000011",
+   "quote": "and 1,005,000 shares of the registrant’s Class F common stock outstanding."
+  },
+  {
+   "id": "src-57",
+   "label": "Shares issued and outstanding",
+   "locator": "Item 8 · Note 9 Stockholders' equity",
+   "accession": "0001321655-26-000011",
+   "quote": "Issued and Outstanding Class A Common Stock 20,000,000 2,290,987 20,000,000 2,242,389 Class B Common Stock 2,700,000 99,200 2,700,000 95,401 Class F Common Stock 1,005 1,005 1,005 1,005 Total 22,701,005 2,391,192 22,701,005 2,338,795"
+  },
+  {
+   "id": "src-58",
+   "label": "Class F voting power",
+   "locator": "Item 8 · Note 9 Stockholders' equity",
+   "accession": "0001321655-26-000011",
+   "quote": "The Class F common stock generally gives the Founders the ability to control up to 49.999999% of the total voting power of the Company’s capital stock, so long as the Founders and certain of their affiliates collectively meet a minimum ownership threshold"
+  },
+  {
+   "id": "src-59",
+   "label": "Share repurchase program",
+   "locator": "Item 7 · Liquidity and capital resources",
+   "accession": "0001321655-26-000011",
+   "quote": "In January 2026, the Company terminated the Share Repurchase Program."
+  },
+  {
+   "id": "src-60",
+   "label": "Remaining performance obligations",
+   "locator": "Item 8 · Note 3 Contract liabilities and remaining performance obligations",
+   "accession": "0001321655-26-000011",
+   "quote": "remaining performance obligations were $4.1 billion as of December 31, 2025, of which the Company expects to recognize approximately 38% as revenue over the next 12 months, 36% as revenue"
+  },
+  {
+   "id": "src-61",
+   "label": "Contract liabilities",
+   "locator": "Item 8 · Note 3 Contract liabilities and remaining performance obligations",
+   "accession": "0001321655-26-000011",
+   "quote": "As of December 31, 2025 and 2024, the Company’s contract liabilities were $812.3 million and $566.4 million, respectively."
+  },
+  {
+   "id": "src-62",
+   "label": "Total remaining deal value",
+   "locator": "Item 7 · Total remaining deal value",
+   "accession": "0001321655-26-000011",
+   "quote": "the total remaining deal value of the contracts, as defined above, was $11.2 billion, up 105% from December 31, 2024, when our total remaining deal value of such contracts was $5.4 billion."
+  },
+  {
+   "id": "src-63",
+   "label": "Remaining deal value by customer type",
+   "locator": "Item 1A · Risk factors",
+   "accession": "0001321655-26-000011",
+   "quote": "$6.8 billion was the remaining deal value of our contracts with commercial customers and $4.4 billion was the remaining deal value of our contracts with government customers."
+  },
+  {
+   "id": "src-64",
+   "label": "Total remaining deal value definition",
+   "locator": "Item 7 · Total remaining deal value",
+   "accession": "0001321655-26-000011",
+   "quote": "Total remaining deal value presumes the exercise of all contract options available to our customers and no termination of contracts."
+  },
+  {
+   "id": "src-65",
+   "label": "Contribution definition",
+   "locator": "Item 8 · Note 13 Segment and Geographic Information",
+   "accession": "0001321655-26-000011",
+   "quote": "A segment’s contribution is calculated as segment revenue less the related costs of revenue and sales and marketing expenses."
+  },
+  {
+   "id": "src-66",
+   "label": "Contract liabilities definition",
+   "locator": "Item 8 · Note 3 Contract liabilities and remaining performance obligations",
+   "accession": "0001321655-26-000011",
+   "quote": "The Company’s contract liabilities consist of deferred revenue and customer deposits."
+  },
+  {
+   "id": "src-67",
+   "label": "RPO definition",
+   "locator": "Item 8 · Note 3 Contract liabilities and remaining performance obligations",
+   "accession": "0001321655-26-000011",
+   "quote": "Revenue allocated to remaining performance obligations represents noncancelable contracted revenue that has not yet been recognized"
+  },
+  {
+   "id": "src-68",
+   "label": "Revenue growth risk",
+   "locator": "Item 1A · Risk factor summary",
+   "accession": "0001321655-26-000011",
+   "quote": "we may not be able to sustain our revenue growth;"
+  },
+  {
+   "id": "src-69",
+   "label": "Customer concentration risk",
+   "locator": "Item 1A · Risk factor summary",
+   "accession": "0001321655-26-000011",
+   "quote": "a limited number of customers account for a substantial portion of our revenue;"
+  },
+  {
+   "id": "src-70",
+   "label": "Deal value risk",
+   "locator": "Item 1A · Risk factor summary",
+   "accession": "0001321655-26-000011",
+   "quote": "we may not realize the full deal value of our customer contracts;"
+  },
+  {
+   "id": "src-71",
+   "label": "Termination for convenience",
+   "locator": "Item 1A · Risk factor summary",
+   "accession": "0001321655-26-000011",
+   "quote": "many of our customer contracts may be terminated by the customer at any time for convenience"
+  },
+  {
+   "id": "src-72",
+   "label": "Public sector risk",
+   "locator": "Item 1A · Risk factor summary",
+   "accession": "0001321655-26-000011",
+   "quote": "we may fail to receive and maintain government contracts or there may be changes in the contracting or fiscal policies of the public sector;"
+  },
+  {
+   "id": "src-73",
+   "label": "Voting control",
+   "locator": "Item 1A · Risk factor summary",
+   "accession": "0001321655-26-000011",
+   "quote": "the multi-class structure of our common stock, the Founder Voting Trust Agreement, and the Founder Voting Agreement concentrate voting power with certain stockholders"
+  },
+  {
+   "id": "src-74",
+   "label": "Receivables concentration",
+   "locator": "Item 8 · Note 2 Concentrations of credit risk",
+   "accession": "0001321655-26-000011",
+   "quote": "Customer I represented 25% and 26% of total accounts receivable as of December 31, 2025 and 2024, respectively"
+  },
+  {
+   "id": "src-75",
+   "label": "Revenue concentration",
+   "locator": "Item 8 · Note 2 Concentrations of credit risk",
+   "accession": "0001321655-26-000011",
+   "quote": "For the years ended December 31, 2025, 2024, and 2023, no customer represented 10% or more of total revenue."
+  },
+  {
+   "id": "src-76",
+   "label": "Cloud hosting commitment",
+   "locator": "Item 8 · Note 8 Commitments and contingencies",
+   "accession": "0001321655-26-000011",
+   "quote": "Under one of its third-party cloud services agreements, as amended, the Company has committed to spend at least $1.95 billion over ten contract years through September 30, 2033"
+  },
+  {
+   "id": "src-77",
+   "label": "No outstanding debt balances",
+   "locator": "Item 7 · Liquidity and Capital Resources",
+   "accession": "0001321655-26-000011",
+   "quote": "As of December 31, 2025, we had no outstanding debt balances and additional available and undrawn revolving commitments of $500.0 million under our credit facility."
+  },
+  {
+   "id": "src-78",
+   "label": "Adjusted income from operations, definition",
+   "locator": "Item 7 · Non-GAAP Reconciliations",
+   "accession": "0001321655-26-000011",
+   "quote": "We use the non-GAAP measures contribution margin; gross profit and gross margin, excluding stock-based compensation; and adjusted income from operations, which excludes stock-based compensation and related employer payroll taxes"
+  },
+  {
+   "id": "src-79",
+   "label": "Stock-based compensation is noncash",
+   "locator": "Item 7 · Non-GAAP Reconciliations",
+   "accession": "0001321655-26-000011",
+   "quote": "We exclude stock-based compensation, which is a noncash expense, from these non-GAAP financial measures"
+  }
+ ],
+ "facts": [
+  {
+   "id": "revenue-fy2023",
+   "label": "Revenue",
+   "value": "2225012",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-01",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "2,225,012",
+   "decimals": -3
+  },
+  {
+   "id": "revenue-fy2024",
+   "label": "Revenue",
+   "value": "2865507",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-01",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "2,865,507",
+   "decimals": -3
+  },
+  {
+   "id": "revenue-fy2025",
+   "label": "Revenue",
+   "value": "4475446",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-01",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "4,475,446",
+   "decimals": -3
+  },
+  {
+   "id": "cost-of-revenue-fy2023",
+   "label": "Cost of revenue",
+   "value": "431105",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-02",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CostOfRevenue",
+   "shown": "431,105",
+   "decimals": -3
+  },
+  {
+   "id": "cost-of-revenue-fy2024",
+   "label": "Cost of revenue",
+   "value": "565990",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-02",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CostOfRevenue",
+   "shown": "565,990",
+   "decimals": -3
+  },
+  {
+   "id": "cost-of-revenue-fy2025",
+   "label": "Cost of revenue",
+   "value": "789177",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-02",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CostOfRevenue",
+   "shown": "789,177",
+   "decimals": -3
+  },
+  {
+   "id": "gross-profit-fy2023",
+   "label": "Gross profit",
+   "value": "1793907",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-03",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:GrossProfit",
+   "shown": "1,793,907",
+   "decimals": -3
+  },
+  {
+   "id": "gross-profit-fy2024",
+   "label": "Gross profit",
+   "value": "2299517",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-03",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:GrossProfit",
+   "shown": "2,299,517",
+   "decimals": -3
+  },
+  {
+   "id": "gross-profit-fy2025",
+   "label": "Gross profit",
+   "value": "3686269",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-03",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:GrossProfit",
+   "shown": "3,686,269",
+   "decimals": -3
+  },
+  {
+   "id": "sm-fy2023",
+   "label": "Sales and marketing",
+   "value": "744992",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-04",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:SellingAndMarketingExpense",
+   "shown": "744,992",
+   "decimals": -3
+  },
+  {
+   "id": "sm-fy2024",
+   "label": "Sales and marketing",
+   "value": "887755",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-04",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:SellingAndMarketingExpense",
+   "shown": "887,755",
+   "decimals": -3
+  },
+  {
+   "id": "sm-fy2025",
+   "label": "Sales and marketing",
+   "value": "1056859",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-04",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:SellingAndMarketingExpense",
+   "shown": "1,056,859",
+   "decimals": -3
+  },
+  {
+   "id": "rd-fy2023",
+   "label": "Research and development",
+   "value": "404624",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-05",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ResearchAndDevelopmentExpense",
+   "shown": "404,624",
+   "decimals": -3
+  },
+  {
+   "id": "rd-fy2024",
+   "label": "Research and development",
+   "value": "507878",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-05",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ResearchAndDevelopmentExpense",
+   "shown": "507,878",
+   "decimals": -3
+  },
+  {
+   "id": "rd-fy2025",
+   "label": "Research and development",
+   "value": "557677",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-05",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ResearchAndDevelopmentExpense",
+   "shown": "557,677",
+   "decimals": -3
+  },
+  {
+   "id": "ga-fy2023",
+   "label": "General and administrative",
+   "value": "524325",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-06",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:GeneralAndAdministrativeExpense",
+   "shown": "524,325",
+   "decimals": -3
+  },
+  {
+   "id": "ga-fy2024",
+   "label": "General and administrative",
+   "value": "593481",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-06",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:GeneralAndAdministrativeExpense",
+   "shown": "593,481",
+   "decimals": -3
+  },
+  {
+   "id": "ga-fy2025",
+   "label": "General and administrative",
+   "value": "657718",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-06",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:GeneralAndAdministrativeExpense",
+   "shown": "657,718",
+   "decimals": -3
+  },
+  {
+   "id": "opex-fy2023",
+   "label": "Total operating expenses",
+   "value": "1673941",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-07",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:OperatingExpenses",
+   "shown": "1,673,941",
+   "decimals": -3
+  },
+  {
+   "id": "opex-fy2024",
+   "label": "Total operating expenses",
+   "value": "1989114",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-07",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:OperatingExpenses",
+   "shown": "1,989,114",
+   "decimals": -3
+  },
+  {
+   "id": "opex-fy2025",
+   "label": "Total operating expenses",
+   "value": "2272254",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-07",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:OperatingExpenses",
+   "shown": "2,272,254",
+   "decimals": -3
+  },
+  {
+   "id": "op-income-fy2023",
+   "label": "Income from operations",
+   "value": "119966",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-08",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:OperatingIncomeLoss",
+   "shown": "119,966",
+   "decimals": -3
+  },
+  {
+   "id": "op-income-fy2024",
+   "label": "Income from operations",
+   "value": "310403",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-08",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:OperatingIncomeLoss",
+   "shown": "310,403",
+   "decimals": -3
+  },
+  {
+   "id": "op-income-fy2025",
+   "label": "Income from operations",
+   "value": "1414015",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-08",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:OperatingIncomeLoss",
+   "shown": "1,414,015",
+   "decimals": -3
+  },
+  {
+   "id": "interest-income-fy2025",
+   "label": "Interest income",
+   "value": "229181",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-09",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:InvestmentIncomeInterest",
+   "shown": "229,181",
+   "decimals": -3
+  },
+  {
+   "id": "pretax-fy2025",
+   "label": "Income before provision for income taxes",
+   "value": "1657368",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-10",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
+   "shown": "1,657,368",
+   "decimals": -3
+  },
+  {
+   "id": "tax-fy2025",
+   "label": "Provision for income taxes",
+   "value": "22724",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-10",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:IncomeTaxExpenseBenefit",
+   "shown": "22,724",
+   "decimals": -3
+  },
+  {
+   "id": "ni-common-fy2023",
+   "label": "Net income attributable to common stockholders",
+   "value": "209825",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-11",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetIncomeLoss",
+   "shown": "209,825",
+   "decimals": -3
+  },
+  {
+   "id": "ni-common-fy2024",
+   "label": "Net income attributable to common stockholders",
+   "value": "462190",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-11",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetIncomeLoss",
+   "shown": "462,190",
+   "decimals": -3
+  },
+  {
+   "id": "ni-common-fy2025",
+   "label": "Net income attributable to common stockholders",
+   "value": "1625033",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-11",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetIncomeLoss",
+   "shown": "1,625,033",
+   "decimals": -3
+  },
+  {
+   "id": "eps-diluted-fy2023",
+   "label": "Diluted earnings per share",
+   "value": "0.09",
+   "unit": "usd_per_share",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-12",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:EarningsPerShareDiluted",
+   "shown": "0.09",
+   "decimals": 2
+  },
+  {
+   "id": "eps-diluted-fy2024",
+   "label": "Diluted earnings per share",
+   "value": "0.19",
+   "unit": "usd_per_share",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-12",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:EarningsPerShareDiluted",
+   "shown": "0.19",
+   "decimals": 2
+  },
+  {
+   "id": "eps-diluted-fy2025",
+   "label": "Diluted earnings per share",
+   "value": "0.63",
+   "unit": "usd_per_share",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-12",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:EarningsPerShareDiluted",
+   "shown": "0.63",
+   "decimals": 2
+  },
+  {
+   "id": "wa-diluted-fy2023",
+   "label": "Weighted-average diluted shares",
+   "value": "2297927",
+   "unit": "shares",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-13",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+   "shown": "2,297,927",
+   "decimals": -3
+  },
+  {
+   "id": "wa-diluted-fy2024",
+   "label": "Weighted-average diluted shares",
+   "value": "2450818",
+   "unit": "shares",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-13",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+   "shown": "2,450,818",
+   "decimals": -3
+  },
+  {
+   "id": "wa-diluted-fy2025",
+   "label": "Weighted-average diluted shares",
+   "value": "2565197",
+   "unit": "shares",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-13",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",
+   "shown": "2,565,197",
+   "decimals": -3
+  },
+  {
+   "id": "ocf-fy2023",
+   "label": "Operating cash flow",
+   "value": "712183",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-14",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+   "shown": "712,183",
+   "decimals": -3
+  },
+  {
+   "id": "ocf-fy2024",
+   "label": "Operating cash flow",
+   "value": "1153865",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-14",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+   "shown": "1,153,865",
+   "decimals": -3
+  },
+  {
+   "id": "ocf-fy2025",
+   "label": "Operating cash flow",
+   "value": "2134473",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-14",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetCashProvidedByUsedInOperatingActivities",
+   "shown": "2,134,473",
+   "decimals": -3
+  },
+  {
+   "id": "sbc-fy2023",
+   "label": "Stock-based compensation",
+   "value": "475903",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-15",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ShareBasedCompensation",
+   "shown": "475,903",
+   "decimals": -3
+  },
+  {
+   "id": "sbc-fy2024",
+   "label": "Stock-based compensation",
+   "value": "691638",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-15",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ShareBasedCompensation",
+   "shown": "691,638",
+   "decimals": -3
+  },
+  {
+   "id": "sbc-fy2025",
+   "label": "Stock-based compensation",
+   "value": "684033",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-15",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ShareBasedCompensation",
+   "shown": "684,033",
+   "decimals": -3
+  },
+  {
+   "id": "ar-change-fy2025",
+   "label": "Increase in accounts receivable",
+   "value": "450429",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-16",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:IncreaseDecreaseInAccountsReceivable",
+   "shown": "(450,429)",
+   "decimals": -3
+  },
+  {
+   "id": "capex-fy2023",
+   "label": "Purchases of property and equipment",
+   "value": "15114",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-17",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+   "shown": "(15,114)",
+   "decimals": -3
+  },
+  {
+   "id": "capex-fy2024",
+   "label": "Purchases of property and equipment",
+   "value": "12634",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-17",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+   "shown": "(12,634)",
+   "decimals": -3
+  },
+  {
+   "id": "capex-fy2025",
+   "label": "Purchases of property and equipment",
+   "value": "33882",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-17",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsToAcquirePropertyPlantAndEquipment",
+   "shown": "(33,882)",
+   "decimals": -3
+  },
+  {
+   "id": "sec-purchases-fy2025",
+   "label": "Purchases of marketable securities",
+   "value": "7702060",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-18",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsToAcquireMarketableSecurities",
+   "shown": "(7,702,060)",
+   "decimals": -3
+  },
+  {
+   "id": "sec-proceeds-fy2025",
+   "label": "Proceeds from sales and redemption of marketable securities",
+   "value": "5026315",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-19",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ProceedsFromSaleAndMaturityOfMarketableSecurities",
+   "shown": "5,026,315",
+   "decimals": -3
+  },
+  {
+   "id": "private-sec-fy2025",
+   "label": "Purchases of privately-held securities",
+   "value": "72924",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-20",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsToAcquireOtherInvestments",
+   "shown": "(72,924)",
+   "decimals": -3
+  },
+  {
+   "id": "investing-fy2025",
+   "label": "Net cash from investing activities",
+   "value": "-2783551",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-21",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NetCashProvidedByUsedInInvestingActivities",
+   "shown": "(2,783,551)",
+   "decimals": -3
+  },
+  {
+   "id": "option-proceeds-fy2023",
+   "label": "Proceeds from the exercise of common stock options",
+   "value": "218238",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-22",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ProceedsFromStockOptionsExercised",
+   "shown": "218,238",
+   "decimals": -3
+  },
+  {
+   "id": "option-proceeds-fy2024",
+   "label": "Proceeds from the exercise of common stock options",
+   "value": "745396",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-22",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ProceedsFromStockOptionsExercised",
+   "shown": "745,396",
+   "decimals": -3
+  },
+  {
+   "id": "option-proceeds-fy2025",
+   "label": "Proceeds from the exercise of common stock options",
+   "value": "129107",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-22",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ProceedsFromStockOptionsExercised",
+   "shown": "129,107",
+   "decimals": -3
+  },
+  {
+   "id": "buyback-fy2023",
+   "label": "Repurchases of common stock",
+   "value": "0",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-23",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+   "shown": "—",
+   "decimals": -3
+  },
+  {
+   "id": "buyback-fy2024",
+   "label": "Repurchases of common stock",
+   "value": "64196",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-23",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+   "shown": "(64,196)",
+   "decimals": -3
+  },
+  {
+   "id": "buyback-fy2025",
+   "label": "Repurchases of common stock",
+   "value": "74985",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-23",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsForRepurchaseOfCommonStock",
+   "shown": "(74,985)",
+   "decimals": -3
+  },
+  {
+   "id": "share-tax-fy2023",
+   "label": "Taxes paid related to net share settlement of equity awards",
+   "value": "0",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-24",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "shown": "—",
+   "decimals": -3
+  },
+  {
+   "id": "share-tax-fy2024",
+   "label": "Taxes paid related to net share settlement of equity awards",
+   "value": "218280",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-24",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "shown": "(218,280)",
+   "decimals": -3
+  },
+  {
+   "id": "share-tax-fy2025",
+   "label": "Taxes paid related to net share settlement of equity awards",
+   "value": "81117",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-24",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:PaymentsRelatedToTaxWithholdingForShareBasedCompensation",
+   "shown": "(81,117)",
+   "decimals": -3
+  },
+  {
+   "id": "cash-change-fy2025",
+   "label": "Net change in cash, cash equivalents and restricted cash",
+   "value": "-668511",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-25",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CashCashEquivalentsRestrictedCashAndRestrictedCashEquivalentsPeriodIncreaseDecreaseIncludingExchangeRateEffect",
+   "shown": "(668,511)",
+   "decimals": -3
+  },
+  {
+   "id": "cash-fy2024",
+   "label": "Cash and cash equivalents",
+   "value": "2098524",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-26",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+   "shown": "2,098,524",
+   "decimals": -3
+  },
+  {
+   "id": "cash-fy2025",
+   "label": "Cash and cash equivalents",
+   "value": "1423796",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-26",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CashAndCashEquivalentsAtCarryingValue",
+   "shown": "1,423,796",
+   "decimals": -3
+  },
+  {
+   "id": "securities-fy2024",
+   "label": "Marketable securities",
+   "value": "3131463",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-27",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:MarketableSecuritiesCurrent",
+   "shown": "3,131,463",
+   "decimals": -3
+  },
+  {
+   "id": "securities-fy2025",
+   "label": "Marketable securities",
+   "value": "5753247",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-27",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:MarketableSecuritiesCurrent",
+   "shown": "5,753,247",
+   "decimals": -3
+  },
+  {
+   "id": "ar-fy2024",
+   "label": "Accounts receivable, net",
+   "value": "575048",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-28",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:AccountsReceivableNetCurrent",
+   "shown": "575,048",
+   "decimals": -3
+  },
+  {
+   "id": "ar-fy2025",
+   "label": "Accounts receivable, net",
+   "value": "1042065",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-28",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:AccountsReceivableNetCurrent",
+   "shown": "1,042,065",
+   "decimals": -3
+  },
+  {
+   "id": "current-assets-fy2024",
+   "label": "Total current assets",
+   "value": "5934289",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-29",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:AssetsCurrent",
+   "shown": "5,934,289",
+   "decimals": -3
+  },
+  {
+   "id": "current-assets-fy2025",
+   "label": "Total current assets",
+   "value": "8358174",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-29",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:AssetsCurrent",
+   "shown": "8,358,174",
+   "decimals": -3
+  },
+  {
+   "id": "total-assets-fy2024",
+   "label": "Total assets",
+   "value": "6340884",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-30",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:Assets",
+   "shown": "6,340,884",
+   "decimals": -3
+  },
+  {
+   "id": "total-assets-fy2025",
+   "label": "Total assets",
+   "value": "8900392",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-30",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:Assets",
+   "shown": "8,900,392",
+   "decimals": -3
+  },
+  {
+   "id": "current-liabilities-fy2024",
+   "label": "Total current liabilities",
+   "value": "996018",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-31",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:LiabilitiesCurrent",
+   "shown": "996,018",
+   "decimals": -3
+  },
+  {
+   "id": "current-liabilities-fy2025",
+   "label": "Total current liabilities",
+   "value": "1175581",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-31",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:LiabilitiesCurrent",
+   "shown": "1,175,581",
+   "decimals": -3
+  },
+  {
+   "id": "total-liabilities-fy2024",
+   "label": "Total liabilities",
+   "value": "1246477",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-32",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:Liabilities",
+   "shown": "1,246,477",
+   "decimals": -3
+  },
+  {
+   "id": "total-liabilities-fy2025",
+   "label": "Total liabilities",
+   "value": "1412381",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-32",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:Liabilities",
+   "shown": "1,412,381",
+   "decimals": -3
+  },
+  {
+   "id": "equity-fy2024",
+   "label": "Total Palantir stockholders' equity",
+   "value": "5003275",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-33",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:StockholdersEquity",
+   "shown": "5,003,275",
+   "decimals": -3
+  },
+  {
+   "id": "equity-fy2025",
+   "label": "Total Palantir stockholders' equity",
+   "value": "7387268",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-33",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:StockholdersEquity",
+   "shown": "7,387,268",
+   "decimals": -3
+  },
+  {
+   "id": "revolver-capacity-fy2025",
+   "label": "Revolving credit facility commitments",
+   "value": "500",
+   "unit": "usd",
+   "scale": "millions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-34",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:LineOfCreditFacilityMaximumBorrowingCapacity",
+   "shown": "$500.0 million",
+   "decimals": -5,
+   "dims": {
+    "us-gaap:DebtInstrumentAxis": "pltr:TwoThousandAndFourteenRevolvingCreditFacilityMember",
+    "us-gaap:LongtermDebtTypeAxis": "us-gaap:LineOfCreditMember"
+   },
+   "dims_label": "2014 revolving credit facility"
+  },
+  {
+   "id": "liquidity-text-fy2025",
+   "label": "Cash, cash equivalents and short-term U.S. Treasury securities",
+   "value": "7.2",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-36",
+   "formula": null,
+   "inputs": [],
+   "shown": "$7.2 billion",
+   "decimals": -8
+  },
+  {
+   "id": "gov-revenue-fy2023",
+   "label": "Government segment revenue",
+   "value": "1222215",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-37",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "1,222,215",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-revenue-fy2024",
+   "label": "Government segment revenue",
+   "value": "1569605",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-37",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "1,569,605",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-revenue-fy2025",
+   "label": "Government segment revenue",
+   "value": "2402287",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-37",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "2,402,287",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "com-revenue-fy2023",
+   "label": "Commercial segment revenue",
+   "value": "1002797",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-38",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "1,002,797",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-revenue-fy2024",
+   "label": "Commercial segment revenue",
+   "value": "1295902",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-38",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "1,295,902",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-revenue-fy2025",
+   "label": "Commercial segment revenue",
+   "value": "2073159",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-38",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueFromContractWithCustomerExcludingAssessedTax",
+   "shown": "2,073,159",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "gov-contribution-fy2023",
+   "label": "Government segment contribution",
+   "value": "724970",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-39",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:Contribution",
+   "shown": "724,970",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-contribution-fy2024",
+   "label": "Government segment contribution",
+   "value": "948440",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-39",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:Contribution",
+   "shown": "948,440",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-contribution-fy2025",
+   "label": "Government segment contribution",
+   "value": "1576070",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-39",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:Contribution",
+   "shown": "1,576,070",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-contribution-margin-fy2023",
+   "label": "Government contribution margin",
+   "value": "0.59",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-39",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ContributionMargin",
+   "shown": "59 %",
+   "decimals": 2,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-contribution-margin-fy2024",
+   "label": "Government contribution margin",
+   "value": "0.60",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-39",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ContributionMargin",
+   "shown": "60 %",
+   "decimals": 2,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "gov-contribution-margin-fy2025",
+   "label": "Government contribution margin",
+   "value": "0.66",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-39",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ContributionMargin",
+   "shown": "66 %",
+   "decimals": 2,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:GovernmentOperatingSegmentMember"
+   },
+   "dims_label": "Government segment"
+  },
+  {
+   "id": "com-contribution-fy2023",
+   "label": "Commercial segment contribution",
+   "value": "520585",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-40",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:Contribution",
+   "shown": "520,585",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-contribution-fy2024",
+   "label": "Commercial segment contribution",
+   "value": "771508",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-40",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:Contribution",
+   "shown": "771,508",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-contribution-fy2025",
+   "label": "Commercial segment contribution",
+   "value": "1366627",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-40",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:Contribution",
+   "shown": "1,366,627",
+   "decimals": -3,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-contribution-margin-fy2023",
+   "label": "Commercial contribution margin",
+   "value": "0.52",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-40",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ContributionMargin",
+   "shown": "52 %",
+   "decimals": 2,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-contribution-margin-fy2024",
+   "label": "Commercial contribution margin",
+   "value": "0.60",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-40",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ContributionMargin",
+   "shown": "60 %",
+   "decimals": 2,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "com-contribution-margin-fy2025",
+   "label": "Commercial contribution margin",
+   "value": "0.66",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-40",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ContributionMargin",
+   "shown": "66 %",
+   "decimals": 2,
+   "dims": {
+    "srt:ConsolidationItemsAxis": "us-gaap:OperatingSegmentsMember",
+    "us-gaap:StatementBusinessSegmentsAxis": "pltr:CommercialMember"
+   },
+   "dims_label": "Commercial segment"
+  },
+  {
+   "id": "us-share-fy2023",
+   "label": "Share of revenue from United States customers",
+   "value": "0.62",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "reported",
+   "source": "src-41",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ConcentrationRiskPercentage1",
+   "shown": "62 %",
+   "decimals": 2,
+   "dims": {
+    "srt:StatementGeographicalAxis": "country:US",
+    "us-gaap:ConcentrationRiskByTypeAxis": "us-gaap:GeographicConcentrationRiskMember",
+    "us-gaap:ConcentrationRiskByBenchmarkAxis": "us-gaap:SalesRevenueNetMember"
+   },
+   "dims_label": "United States"
+  },
+  {
+   "id": "us-share-fy2024",
+   "label": "Share of revenue from United States customers",
+   "value": "0.66",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-41",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ConcentrationRiskPercentage1",
+   "shown": "66 %",
+   "decimals": 2,
+   "dims": {
+    "srt:StatementGeographicalAxis": "country:US",
+    "us-gaap:ConcentrationRiskByTypeAxis": "us-gaap:GeographicConcentrationRiskMember",
+    "us-gaap:ConcentrationRiskByBenchmarkAxis": "us-gaap:SalesRevenueNetMember"
+   },
+   "dims_label": "United States"
+  },
+  {
+   "id": "us-share-fy2025",
+   "label": "Share of revenue from United States customers",
+   "value": "0.74",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-41",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ConcentrationRiskPercentage1",
+   "shown": "74 %",
+   "decimals": 2,
+   "dims": {
+    "srt:StatementGeographicalAxis": "country:US",
+    "us-gaap:ConcentrationRiskByTypeAxis": "us-gaap:GeographicConcentrationRiskMember",
+    "us-gaap:ConcentrationRiskByBenchmarkAxis": "us-gaap:SalesRevenueNetMember"
+   },
+   "dims_label": "United States"
+  },
+  {
+   "id": "us-commercial-fy2025",
+   "label": "Revenue from U.S. commercial customers",
+   "value": "1.5",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-42",
+   "formula": null,
+   "inputs": [],
+   "shown": "$1.5 billion",
+   "decimals": -8
+  },
+  {
+   "id": "us-commercial-fy2024",
+   "label": "Revenue from U.S. commercial customers",
+   "value": "702.3",
+   "unit": "usd",
+   "scale": "millions",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-42",
+   "formula": null,
+   "inputs": [],
+   "shown": "$702.3 million",
+   "decimals": -5
+  },
+  {
+   "id": "us-commercial-growth-fy2025",
+   "label": "U.S. commercial revenue growth (as stated)",
+   "value": "1.09",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-42",
+   "formula": null,
+   "inputs": [],
+   "shown": "109%",
+   "decimals": 2
+  },
+  {
+   "id": "segments-fy2025",
+   "label": "Number of operating segments",
+   "value": "2",
+   "unit": "count",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-44",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:NumberOfOperatingSegments",
+   "shown": "two",
+   "decimals": "INF"
+  },
+  {
+   "id": "customers-fy2025",
+   "label": "Customers (trailing twelve months)",
+   "value": "954",
+   "unit": "count",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-45",
+   "formula": null,
+   "inputs": [],
+   "shown": "954",
+   "decimals": 0
+  },
+  {
+   "id": "customers-fy2024",
+   "label": "Customers (trailing twelve months)",
+   "value": "711",
+   "unit": "count",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-46",
+   "formula": null,
+   "inputs": [],
+   "shown": "711",
+   "decimals": 0
+  },
+  {
+   "id": "employees-fy2025",
+   "label": "Full-time employees",
+   "value": "4429",
+   "unit": "count",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-48",
+   "formula": null,
+   "inputs": [],
+   "shown": "4,429",
+   "decimals": 0
+  },
+  {
+   "id": "top20-avg-fy2025",
+   "label": "Average revenue per top-twenty customer",
+   "value": "93.9",
+   "unit": "usd",
+   "scale": "millions",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-49",
+   "formula": null,
+   "inputs": [],
+   "shown": "$93.9 million",
+   "decimals": -5
+  },
+  {
+   "id": "top20-avg-fy2024",
+   "label": "Average revenue per top-twenty customer",
+   "value": "64.6",
+   "unit": "usd",
+   "scale": "millions",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-49",
+   "formula": null,
+   "inputs": [],
+   "shown": "$64.6 million",
+   "decimals": -5
+  },
+  {
+   "id": "sbc-payroll-tax-fy2025",
+   "label": "Employer payroll taxes related to stock-based compensation",
+   "value": "156052",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-50",
+   "formula": null,
+   "inputs": [],
+   "shown": "156,052",
+   "decimals": -3
+  },
+  {
+   "id": "sbc-payroll-tax-fy2024",
+   "label": "Employer payroll taxes related to stock-based compensation",
+   "value": "126021",
+   "unit": "usd",
+   "scale": "thousands",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-50",
+   "formula": null,
+   "inputs": [],
+   "shown": "126,021",
+   "decimals": -3
+  },
+  {
+   "id": "adj-op-income-fy2025",
+   "label": "Adjusted income from operations (non-GAAP)",
+   "value": "2.3",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-51",
+   "formula": null,
+   "inputs": [],
+   "shown": "$2.3 billion",
+   "decimals": -8
+  },
+  {
+   "id": "adj-op-income-fy2024",
+   "label": "Adjusted income from operations (non-GAAP)",
+   "value": "1.1",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "FY2024",
+   "kind": "reported",
+   "source": "src-52",
+   "formula": null,
+   "inputs": [],
+   "shown": "$1.1 billion",
+   "decimals": -8
+  },
+  {
+   "id": "adj-op-margin-fy2025",
+   "label": "Adjusted operating margin (non-GAAP, as stated)",
+   "value": "0.50",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-53",
+   "formula": null,
+   "inputs": [],
+   "shown": "50 %",
+   "decimals": 2
+  },
+  {
+   "id": "etr-fy2025",
+   "label": "Effective tax rate",
+   "value": "0.014",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "reported",
+   "source": "src-54",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:EffectiveIncomeTaxRateContinuingOperations",
+   "shown": "1.4 %",
+   "decimals": 3
+  },
+  {
+   "id": "shares-class-a-feb2026",
+   "label": "Class A shares outstanding",
+   "value": "2291470751",
+   "unit": "shares",
+   "scale": "units",
+   "period": "10 Feb 2026",
+   "kind": "reported",
+   "source": "src-55",
+   "formula": null,
+   "inputs": [],
+   "concept": "dei:EntityCommonStockSharesOutstanding",
+   "shown": "2,291,470,751",
+   "decimals": "INF",
+   "dims": {
+    "us-gaap:StatementClassOfStockAxis": "us-gaap:CommonClassAMember"
+   },
+   "dims_label": "Class A common stock"
+  },
+  {
+   "id": "shares-class-b-feb2026",
+   "label": "Class B shares outstanding",
+   "value": "99199960",
+   "unit": "shares",
+   "scale": "units",
+   "period": "10 Feb 2026",
+   "kind": "reported",
+   "source": "src-55",
+   "formula": null,
+   "inputs": [],
+   "concept": "dei:EntityCommonStockSharesOutstanding",
+   "shown": "99,199,960",
+   "decimals": "INF",
+   "dims": {
+    "us-gaap:StatementClassOfStockAxis": "us-gaap:CommonClassBMember"
+   },
+   "dims_label": "Class B common stock"
+  },
+  {
+   "id": "shares-class-f-feb2026",
+   "label": "Class F shares outstanding",
+   "value": "1005000",
+   "unit": "shares",
+   "scale": "units",
+   "period": "10 Feb 2026",
+   "kind": "reported",
+   "source": "src-56",
+   "formula": null,
+   "inputs": [],
+   "concept": "dei:EntityCommonStockSharesOutstanding",
+   "shown": "1,005,000",
+   "decimals": "INF",
+   "dims": {
+    "us-gaap:StatementClassOfStockAxis": "pltr:CommonClassFMember"
+   },
+   "dims_label": "Class F common stock"
+  },
+  {
+   "id": "shares-issued-fy2024",
+   "label": "Common shares issued and outstanding (all classes)",
+   "value": "2338795",
+   "unit": "shares",
+   "scale": "thousands",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-57",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CommonStockSharesIssued",
+   "shown": "2,338,795",
+   "decimals": "INF"
+  },
+  {
+   "id": "shares-issued-fy2025",
+   "label": "Common shares issued and outstanding (all classes)",
+   "value": "2391192",
+   "unit": "shares",
+   "scale": "thousands",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-57",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:CommonStockSharesIssued",
+   "shown": "2,391,192",
+   "decimals": "INF"
+  },
+  {
+   "id": "class-f-voting-fy2025",
+   "label": "Voting power the Class F stock can control",
+   "value": "0.49999999",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-58",
+   "formula": null,
+   "inputs": [],
+   "concept": "pltr:ControlOfTotalVotingPower",
+   "shown": "49.999999%",
+   "decimals": "INF",
+   "dims": {
+    "us-gaap:StatementClassOfStockAxis": "pltr:CommonClassFMember"
+   },
+   "dims_label": "Class F common stock"
+  },
+  {
+   "id": "rpo-fy2025",
+   "label": "Remaining performance obligations",
+   "value": "4.1",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-60",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueRemainingPerformanceObligation",
+   "shown": "$4.1 billion",
+   "decimals": -8
+  },
+  {
+   "id": "rpo-12m-share-fy2025",
+   "label": "Share of RPO expected within 12 months",
+   "value": "0.38",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-60",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueRemainingPerformanceObligationPercentage",
+   "shown": "38%",
+   "decimals": 2,
+   "dims": {
+    "us-gaap:RevenueRemainingPerformanceObligationExpectedTimingOfSatisfactionStartDateAxis": "2026-01-01"
+   },
+   "dims_label": "Expected within 12 months of 31 Dec 2025"
+  },
+  {
+   "id": "rpo-13-36m-share-fy2025",
+   "label": "Share of RPO expected in months 13 to 36",
+   "value": "0.36",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-60",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:RevenueRemainingPerformanceObligationPercentage",
+   "shown": "36%",
+   "decimals": 2,
+   "dims": {
+    "us-gaap:RevenueRemainingPerformanceObligationExpectedTimingOfSatisfactionStartDateAxis": "2027-01-01"
+   },
+   "dims_label": "Expected in months 13 to 36 after 31 Dec 2025"
+  },
+  {
+   "id": "contract-liabilities-fy2024",
+   "label": "Contract liabilities",
+   "value": "566.4",
+   "unit": "usd",
+   "scale": "millions",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-61",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ContractWithCustomerLiability",
+   "shown": "$566.4 million",
+   "decimals": -5
+  },
+  {
+   "id": "contract-liabilities-fy2025",
+   "label": "Contract liabilities",
+   "value": "812.3",
+   "unit": "usd",
+   "scale": "millions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-61",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ContractWithCustomerLiability",
+   "shown": "$812.3 million",
+   "decimals": -5
+  },
+  {
+   "id": "trdv-fy2025",
+   "label": "Total remaining deal value",
+   "value": "11.2",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-62",
+   "formula": null,
+   "inputs": [],
+   "shown": "$11.2 billion",
+   "decimals": -8
+  },
+  {
+   "id": "trdv-fy2024",
+   "label": "Total remaining deal value",
+   "value": "5.4",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-62",
+   "formula": null,
+   "inputs": [],
+   "shown": "$5.4 billion",
+   "decimals": -8
+  },
+  {
+   "id": "trdv-commercial-fy2025",
+   "label": "Remaining deal value, commercial customers",
+   "value": "6.8",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-63",
+   "formula": null,
+   "inputs": [],
+   "shown": "$6.8 billion",
+   "decimals": -8
+  },
+  {
+   "id": "trdv-government-fy2025",
+   "label": "Remaining deal value, government customers",
+   "value": "4.4",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-63",
+   "formula": null,
+   "inputs": [],
+   "shown": "$4.4 billion",
+   "decimals": -8
+  },
+  {
+   "id": "customer-i-ar-share-fy2024",
+   "label": "Customer I share of accounts receivable",
+   "value": "0.26",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2024",
+   "kind": "reported",
+   "source": "src-74",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ConcentrationRiskPercentage1",
+   "shown": "26%",
+   "decimals": 2,
+   "context_period": "FY2024",
+   "dims": {
+    "srt:MajorCustomersAxis": "pltr:CustomerIMember",
+    "us-gaap:ConcentrationRiskByTypeAxis": "us-gaap:CustomerConcentrationRiskMember",
+    "us-gaap:ConcentrationRiskByBenchmarkAxis": "pltr:AccountsReceivableBenchmarkMember"
+   },
+   "dims_label": "Customer I"
+  },
+  {
+   "id": "customer-i-ar-share-fy2025",
+   "label": "Customer I share of accounts receivable",
+   "value": "0.25",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-74",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:ConcentrationRiskPercentage1",
+   "shown": "25%",
+   "decimals": 2,
+   "context_period": "FY2025",
+   "dims": {
+    "srt:MajorCustomersAxis": "pltr:CustomerIMember",
+    "us-gaap:ConcentrationRiskByTypeAxis": "us-gaap:CustomerConcentrationRiskMember",
+    "us-gaap:ConcentrationRiskByBenchmarkAxis": "pltr:AccountsReceivableBenchmarkMember"
+   },
+   "dims_label": "Customer I"
+  },
+  {
+   "id": "cloud-commitment-fy2025",
+   "label": "Minimum cloud hosting purchase commitment (ten contract years)",
+   "value": "1.95",
+   "unit": "usd",
+   "scale": "billions",
+   "period": "31 Dec 2025",
+   "kind": "reported",
+   "source": "src-76",
+   "formula": null,
+   "inputs": [],
+   "concept": "us-gaap:LongTermPurchaseCommitmentAmount",
+   "shown": "$1.95 billion",
+   "decimals": -7,
+   "context_period": "FY2025",
+   "dims": {
+    "us-gaap:PurchaseCommitmentExcludingLongtermCommitmentAxis": "us-gaap:PurchaseCommitmentMember"
+   },
+   "dims_label": "Cloud hosting purchase commitment"
+  },
+  {
+   "id": "revenue-growth-fy2025",
+   "label": "Revenue growth",
+   "value": "0.561833909322154857761645670",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "revenue-fy2025 / revenue-fy2024 - 1",
+   "inputs": [
+    "revenue-fy2025",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "gross-margin-fy2023",
+   "label": "Gross margin",
+   "value": "0.8062459887856784592622421812",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "gross-profit-fy2023 / revenue-fy2023",
+   "inputs": [
+    "gross-profit-fy2023",
+    "revenue-fy2023"
+   ]
+  },
+  {
+   "id": "op-margin-fy2023",
+   "label": "GAAP operating margin",
+   "value": "0.05391701258240404995568563226",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "op-income-fy2023 / revenue-fy2023",
+   "inputs": [
+    "op-income-fy2023",
+    "revenue-fy2023"
+   ]
+  },
+  {
+   "id": "net-margin-fy2023",
+   "label": "Net margin (attributable to common)",
+   "value": "0.09430286218681067787499573036",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ni-common-fy2023 / revenue-fy2023",
+   "inputs": [
+    "ni-common-fy2023",
+    "revenue-fy2023"
+   ]
+  },
+  {
+   "id": "fcf-fy2023",
+   "label": "Simple free cash flow",
+   "value": "697069000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2023 - capex-fy2023",
+   "inputs": [
+    "ocf-fy2023",
+    "capex-fy2023"
+   ]
+  },
+  {
+   "id": "fcf-margin-fy2023",
+   "label": "Free cash flow margin",
+   "value": "0.3132877485604572020285733290",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "fcf-fy2023 / revenue-fy2023",
+   "inputs": [
+    "fcf-fy2023",
+    "revenue-fy2023"
+   ]
+  },
+  {
+   "id": "sbc-share-fy2023",
+   "label": "Stock-based compensation as share of revenue",
+   "value": "0.2138878352116752628749867416",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "sbc-fy2023 / revenue-fy2023",
+   "inputs": [
+    "sbc-fy2023",
+    "revenue-fy2023"
+   ]
+  },
+  {
+   "id": "ocf-to-ni-fy2023",
+   "label": "Operating cash flow to net income",
+   "value": "3.394176099130227570594543072",
+   "unit": "multiple",
+   "scale": "units",
+   "period": "FY2023",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2023 / ni-common-fy2023",
+   "inputs": [
+    "ocf-fy2023",
+    "ni-common-fy2023"
+   ]
+  },
+  {
+   "id": "gross-margin-fy2024",
+   "label": "Gross margin",
+   "value": "0.8024817248745160978493509177",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "gross-profit-fy2024 / revenue-fy2024",
+   "inputs": [
+    "gross-profit-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "op-margin-fy2024",
+   "label": "GAAP operating margin",
+   "value": "0.1083239370903648115324792436",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "op-income-fy2024 / revenue-fy2024",
+   "inputs": [
+    "op-income-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "net-margin-fy2024",
+   "label": "Net margin (attributable to common)",
+   "value": "0.1612943189460015278273617897",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ni-common-fy2024 / revenue-fy2024",
+   "inputs": [
+    "ni-common-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "fcf-fy2024",
+   "label": "Simple free cash flow",
+   "value": "1141231000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2024 - capex-fy2024",
+   "inputs": [
+    "ocf-fy2024",
+    "capex-fy2024"
+   ]
+  },
+  {
+   "id": "fcf-margin-fy2024",
+   "label": "Free cash flow margin",
+   "value": "0.3982649492742471053115556863",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "fcf-fy2024 / revenue-fy2024",
+   "inputs": [
+    "fcf-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "sbc-share-fy2024",
+   "label": "Stock-based compensation as share of revenue",
+   "value": "0.2413667110218191754548148024",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "sbc-fy2024 / revenue-fy2024",
+   "inputs": [
+    "sbc-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "ocf-to-ni-fy2024",
+   "label": "Operating cash flow to net income",
+   "value": "2.496516584088794651550228261",
+   "unit": "multiple",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2024 / ni-common-fy2024",
+   "inputs": [
+    "ocf-fy2024",
+    "ni-common-fy2024"
+   ]
+  },
+  {
+   "id": "gross-margin-fy2025",
+   "label": "Gross margin",
+   "value": "0.8236651721415027686626092684",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "gross-profit-fy2025 / revenue-fy2025",
+   "inputs": [
+    "gross-profit-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "op-margin-fy2025",
+   "label": "GAAP operating margin",
+   "value": "0.3159495165398040776271236431",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "op-income-fy2025 / revenue-fy2025",
+   "inputs": [
+    "op-income-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "net-margin-fy2025",
+   "label": "Net margin (attributable to common)",
+   "value": "0.3630996776634105293640008169",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ni-common-fy2025 / revenue-fy2025",
+   "inputs": [
+    "ni-common-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "fcf-fy2025",
+   "label": "Simple free cash flow",
+   "value": "2100591000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2025 - capex-fy2025",
+   "inputs": [
+    "ocf-fy2025",
+    "capex-fy2025"
+   ]
+  },
+  {
+   "id": "fcf-margin-fy2025",
+   "label": "Free cash flow margin",
+   "value": "0.4693590314797676030500647310",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "fcf-fy2025 / revenue-fy2025",
+   "inputs": [
+    "fcf-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "sbc-share-fy2025",
+   "label": "Stock-based compensation as share of revenue",
+   "value": "0.1528413034142295538813338380",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "sbc-fy2025 / revenue-fy2025",
+   "inputs": [
+    "sbc-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "ocf-to-ni-fy2025",
+   "label": "Operating cash flow to net income",
+   "value": "1.313495172098043547423344634",
+   "unit": "multiple",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2025 / ni-common-fy2025",
+   "inputs": [
+    "ocf-fy2025",
+    "ni-common-fy2025"
+   ]
+  },
+  {
+   "id": "fcf-after-sbc-fy2025",
+   "label": "Simple free cash flow after stock compensation",
+   "value": "1416558000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "fcf-fy2025 - sbc-fy2025",
+   "inputs": [
+    "fcf-fy2025",
+    "sbc-fy2025"
+   ]
+  },
+  {
+   "id": "op-margin-change-fy2025",
+   "label": "Change in GAAP operating margin",
+   "value": "0.2076255794494392660946443995",
+   "unit": "points",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "op-margin-fy2025 - op-margin-fy2024",
+   "inputs": [
+    "op-margin-fy2025",
+    "op-margin-fy2024"
+   ]
+  },
+  {
+   "id": "ocf-growth-fy2025",
+   "label": "Operating cash flow growth",
+   "value": "0.849846385842364574711946372",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ocf-fy2025 / ocf-fy2024 - 1",
+   "inputs": [
+    "ocf-fy2025",
+    "ocf-fy2024"
+   ]
+  },
+  {
+   "id": "net-sec-purchases-fy2025",
+   "label": "Net purchases of marketable securities",
+   "value": "2675745000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "sec-purchases-fy2025 - sec-proceeds-fy2025",
+   "inputs": [
+    "sec-purchases-fy2025",
+    "sec-proceeds-fy2025"
+   ]
+  },
+  {
+   "id": "opex-growth-fy2025",
+   "label": "Operating expense growth",
+   "value": "0.142344782651974698282753025",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "opex-fy2025 / opex-fy2024 - 1",
+   "inputs": [
+    "opex-fy2025",
+    "opex-fy2024"
+   ]
+  },
+  {
+   "id": "sm-share-fy2024",
+   "label": "Sales and marketing as share of revenue",
+   "value": "0.3098073046061307824409432607",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "sm-fy2024 / revenue-fy2024",
+   "inputs": [
+    "sm-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "rd-share-fy2024",
+   "label": "Research and development as share of revenue",
+   "value": "0.1772384433191054846489643892",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "rd-fy2024 / revenue-fy2024",
+   "inputs": [
+    "rd-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "ga-share-fy2024",
+   "label": "General and administrative as share of revenue",
+   "value": "0.2071120398589150192269640242",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ga-fy2024 / revenue-fy2024",
+   "inputs": [
+    "ga-fy2024",
+    "revenue-fy2024"
+   ]
+  },
+  {
+   "id": "sm-share-fy2025",
+   "label": "Sales and marketing as share of revenue",
+   "value": "0.2361460734863072864693261856",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "sm-fy2025 / revenue-fy2025",
+   "inputs": [
+    "sm-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "rd-share-fy2025",
+   "label": "Research and development as share of revenue",
+   "value": "0.1246081396133480327994126172",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "rd-fy2025 / revenue-fy2025",
+   "inputs": [
+    "rd-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "ga-share-fy2025",
+   "label": "General and administrative as share of revenue",
+   "value": "0.1469614425020433717667468226",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ga-fy2025 / revenue-fy2025",
+   "inputs": [
+    "ga-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "interest-share-pretax-fy2025",
+   "label": "Interest income as share of pre-tax income",
+   "value": "0.1382800922909094419585752832",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "interest-income-fy2025 / pretax-fy2025",
+   "inputs": [
+    "interest-income-fy2025",
+    "pretax-fy2025"
+   ]
+  },
+  {
+   "id": "gov-revenue-growth-fy2025",
+   "label": "Government revenue growth",
+   "value": "0.530504171431665928689065083",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "gov-revenue-fy2025 / gov-revenue-fy2024 - 1",
+   "inputs": [
+    "gov-revenue-fy2025",
+    "gov-revenue-fy2024"
+   ]
+  },
+  {
+   "id": "com-revenue-growth-fy2025",
+   "label": "Commercial revenue growth",
+   "value": "0.599780693293165686911510284",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "com-revenue-fy2025 / com-revenue-fy2024 - 1",
+   "inputs": [
+    "com-revenue-fy2025",
+    "com-revenue-fy2024"
+   ]
+  },
+  {
+   "id": "customers-growth-fy2025",
+   "label": "Customer count growth",
+   "value": "0.341772151898734177215189873",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "customers-fy2025 / customers-fy2024 - 1",
+   "inputs": [
+    "customers-fy2025",
+    "customers-fy2024"
+   ]
+  },
+  {
+   "id": "revenue-per-employee-fy2025",
+   "label": "Revenue per full-time employee (year-end headcount)",
+   "value": "1010486.791600812824565364642",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "revenue-fy2025 / employees-fy2025",
+   "inputs": [
+    "revenue-fy2025",
+    "employees-fy2025"
+   ]
+  },
+  {
+   "id": "capex-share-fy2025",
+   "label": "Purchases of property and equipment as share of revenue",
+   "value": "0.007570642121477948789908313049",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "capex-fy2025 / revenue-fy2025",
+   "inputs": [
+    "capex-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "cash-and-securities-fy2024",
+   "label": "Cash, cash equivalents and marketable securities",
+   "value": "5229987000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "31 Dec 2024",
+   "kind": "calculated",
+   "source": null,
+   "formula": "cash-fy2024 + securities-fy2024",
+   "inputs": [
+    "cash-fy2024",
+    "securities-fy2024"
+   ]
+  },
+  {
+   "id": "cash-and-securities-fy2025",
+   "label": "Cash, cash equivalents and marketable securities",
+   "value": "7177043000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "cash-fy2025 + securities-fy2025",
+   "inputs": [
+    "cash-fy2025",
+    "securities-fy2025"
+   ]
+  },
+  {
+   "id": "liabilities-to-assets-fy2025",
+   "label": "Total liabilities to total assets",
+   "value": "0.1586875049997797849802570494",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "total-liabilities-fy2025 / total-assets-fy2025",
+   "inputs": [
+    "total-liabilities-fy2025",
+    "total-assets-fy2025"
+   ]
+  },
+  {
+   "id": "ar-growth-fy2025",
+   "label": "Accounts receivable growth",
+   "value": "0.812135682586497127196338393",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2024 to 31 Dec 2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "ar-fy2025 / ar-fy2024 - 1",
+   "inputs": [
+    "ar-fy2025",
+    "ar-fy2024"
+   ]
+  },
+  {
+   "id": "wa-diluted-growth-fy2025",
+   "label": "Growth in weighted-average diluted shares",
+   "value": "0.046669724149243232259596592",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "wa-diluted-fy2025 / wa-diluted-fy2024 - 1",
+   "inputs": [
+    "wa-diluted-fy2025",
+    "wa-diluted-fy2024"
+   ]
+  },
+  {
+   "id": "shares-out-feb2026",
+   "label": "Shares outstanding, all classes (cover page)",
+   "value": "2391675711",
+   "unit": "shares",
+   "scale": "units",
+   "period": "10 Feb 2026",
+   "kind": "calculated",
+   "source": null,
+   "formula": "shares-class-a-feb2026 + shares-class-b-feb2026 + shares-class-f-feb2026",
+   "inputs": [
+    "shares-class-a-feb2026",
+    "shares-class-b-feb2026",
+    "shares-class-f-feb2026"
+   ]
+  },
+  {
+   "id": "rpo-to-revenue-fy2025",
+   "label": "RPO relative to FY2025 revenue (RPO as stated, to $0.1 billion)",
+   "value": "0.9161098134130095637395691960",
+   "unit": "multiple",
+   "scale": "units",
+   "period": "31 Dec 2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "rpo-fy2025 / revenue-fy2025",
+   "inputs": [
+    "rpo-fy2025",
+    "revenue-fy2025"
+   ]
+  },
+  {
+   "id": "contract-liabilities-growth-fy2025",
+   "label": "Contract liabilities growth (from figures stated to $0.1 million)",
+   "value": "0.434145480225988700564971751",
+   "unit": "ratio",
+   "scale": "units",
+   "period": "31 Dec 2024 to 31 Dec 2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "contract-liabilities-fy2025 / contract-liabilities-fy2024 - 1",
+   "inputs": [
+    "contract-liabilities-fy2025",
+    "contract-liabilities-fy2024"
+   ]
+  },
+  {
+   "id": "investing-outflow-fy2025",
+   "label": "Cash used in investing activities",
+   "value": "2783551000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "0 - investing-fy2025",
+   "inputs": [
+    "investing-fy2025"
+   ]
+  },
+  {
+   "id": "cash-decrease-fy2025",
+   "label": "Decrease in cash, cash equivalents and restricted cash",
+   "value": "668511000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "0 - cash-change-fy2025",
+   "inputs": [
+    "cash-change-fy2025"
+   ]
+  },
+  {
+   "id": "buyback-plus-tax-fy2025",
+   "label": "Cash spent on buybacks and share-settlement taxes",
+   "value": "156102000",
+   "unit": "usd",
+   "scale": "units",
+   "period": "FY2025",
+   "kind": "calculated",
+   "source": null,
+   "formula": "buyback-fy2025 + share-tax-fy2025",
+   "inputs": [
+    "buyback-fy2025",
+    "share-tax-fy2025"
+   ]
+  }
+ ]
+}

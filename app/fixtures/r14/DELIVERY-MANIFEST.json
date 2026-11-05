@@ -1,0 +1,8 @@
+{
+  "source": "pipeline delivery R14",
+  "report_sha256": "0c62f515cc417d07ceb6a802bbebfed719d00d9b98a4cc916c97473c14754d1e",
+  "report_bytes": 125787,
+  "final_available": false,
+  "native_status": "HOLD",
+  "note": "Draft / review-required integration fixture. Not an accepted report."
+}

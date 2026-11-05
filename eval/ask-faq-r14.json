@@ -1,0 +1,223 @@
+[
+  {
+    "id": "faq-01",
+    "question": "What was Palantir's net income for 2025?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["net-income-fy2025", "summary-thesis", "score-table", "src-28"],
+    "required_numbers": ["1,634,644"],
+    "notes": "[profitability] Reported figure, thousands of USD (about $1.63 billion). A scaled answer such as $1.63 billion passes the code's rounding rule only if a cited element shows the fact."
+  },
+  {
+    "id": "faq-02",
+    "question": "How much did the company earn from its core operations in the latest fiscal year?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["op-income-fy2025", "summary-thesis", "score-table", "src-27"],
+    "required_numbers": ["1,414,015"],
+    "notes": "[profitability] Operating income (the filing's income from operations) for FY2025, thousands of USD. 'Core operations' is the reader's wording for operating income."
+  },
+  {
+    "id": "faq-03",
+    "question": "Out of every dollar of sales in 2025, how much was left as operating profit?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["op-margin-fy2025", "prof-margins", "prof-table"],
+    "required_numbers": [],
+    "notes": "[profitability] Operating margin is a calculated fact (ratio 0.3159...), so the report text carries no printed figure and required_numbers is empty. An answer of about 31.6% or 32% must pass through the code's ratio x 100 rounding rule when op-margin-fy2025 is cited or tokened. Do not accept a margin the report does not support."
+  },
+  {
+    "id": "faq-04",
+    "question": "What were gross profit and gross margin for 2025?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["gross-profit-fy2025", "gross-margin-fy2025", "prof-margins", "score-table", "src-26"],
+    "required_numbers": ["3,686,269"],
+    "notes": "[profitability] Gross profit is reported (thousands of USD); gross margin is calculated (ratio 0.8237, about 82.4%) and has no printed form."
+  },
+  {
+    "id": "faq-05",
+    "question": "How much income tax did Palantir book on its 2025 profit, and what tax rate does that work out to?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["tax-provision-fy2025", "effective-tax-rate-fy2025", "prof-drivers", "quality-tax", "src-30"],
+    "required_numbers": ["22,724"],
+    "notes": "[profitability] Income tax provision (an expense, not necessarily cash paid) of 22,724 thousand USD on pre-tax income of 1,657,368 thousand; effective rate is calculated (ratio 0.0137, about 1.4%). The report calls it a provision; the answer should not call it cash taxes paid."
+  },
+  {
+    "id": "faq-06",
+    "question": "How big were Palantir's sales in fiscal 2025, and how fast did they grow?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["revenue-fy2025", "revenue-growth-fy2025", "summary-thesis", "score-overview", "src-18"],
+    "required_numbers": ["4,475,446"],
+    "notes": "Revenue is reported (thousands of USD, about $4.48 billion). Growth is calculated (ratio 0.5618, about 56.2%); FY2024 revenue is 2,865,507."
+  },
+  {
+    "id": "faq-07",
+    "question": "How much cash did the business actually generate from its operations in 2025?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["ocf-fy2025", "summary-cash", "score-reading", "cash-bridge", "src-31"],
+    "required_numbers": ["2,134,473"],
+    "notes": "Operating cash flow, reported, thousands of USD (about $2.13 billion)."
+  },
+  {
+    "id": "faq-08",
+    "question": "How much cash and short-term investments did Palantir have at the end of 2025?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["balance-liquidity", "cash-dec2025", "marketable-dec2025", "t-5", "t-7", "src-68", "src-69"],
+    "required_numbers": ["1,423,796", "5,753,247"],
+    "notes": "Cash and cash equivalents 1,423,796 and marketable securities 5,753,247 (thousands of USD) at 31 Dec 2025. The combined total (liquidity-dec2025, about $7.18 billion) is a calculated fact with no printed form. Ids t-5/t-7 duplicate cash-dec2025/marketable-dec2025."
+  },
+  {
+    "id": "faq-09",
+    "question": "How many customers did the company have at the end of 2025, and how does that compare with the year before?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["business-customers", "src-81", "src-03", "src-04"],
+    "required_numbers": ["954", "711"],
+    "notes": "954 customers (period ended 31 Dec 2025) versus 711 (2024). Customer is defined as an organization with revenue in the trailing twelve months (src-04). The 954 vs 711 comparison is in business-customers and src-81; src-03 and src-04 give only 954."
+  },
+  {
+    "id": "faq-10",
+    "question": "How much contracted revenue is still waiting to be recognized, and how much of it should show up within a year?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["demand-rpo", "rpo-dec2025", "rpo-next12m-pct", "src-09"],
+    "required_numbers": ["$4.1 billion", "38%"],
+    "notes": "Remaining performance obligations of $4.1 billion at 31 Dec 2025, about 38% over the next 12 months and 36% over months 13 to 36 (the remaining 26% is not printed; it is implied)."
+  },
+  {
+    "id": "faq-11",
+    "question": "How much money did the company spend buying back its own shares in 2025?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["share-buybacks", "repurchases-fy2025", "t-337", "src-73"],
+    "required_numbers": ["74,985"],
+    "notes": "Cash paid for repurchases 74,985 thousand USD (about $75.0 million), shown as (74,985) on the cash flow statement; 601 thousand shares retired. Substring match covers the parentheses form."
+  },
+  {
+    "id": "faq-12",
+    "question": "Does the company have any borrowings, and how much could it borrow if it needed to?",
+    "category": "factual",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["balance-debt", "revolver-capacity-dec2025", "t-490", "src-78", "src-79"],
+    "required_numbers": ["$500.0 million"],
+    "notes": "No outstanding debt under the secured revolving credit facility at 31 Dec 2025; facility size $500.0 million, maturing 31 March 2027 (src-78, src-79)."
+  },
+  {
+    "id": "faq-13",
+    "question": "Why did operating profit grow so much faster than sales last year?",
+    "category": "why",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["prof-margins", "prof-drivers", "summary-thesis", "score-overview"],
+    "required_numbers": [],
+    "notes": "Report's explanation: operating expenses (sales and marketing, R&D, general and administrative) grew more slowly than revenue, so operating margin rose by much more than gross margin; this is operating leverage, not a cut in absolute spending. Numbers are calculated facts (revenue growth 56.2%, operating income growth 355.5%, opex about 14%); required_numbers empty because none is printed in the text."
+  },
+  {
+    "id": "faq-14",
+    "question": "What made the cost of delivering the product go up in 2025?",
+    "category": "why",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["prof-drivers", "src-42"],
+    "required_numbers": ["$94.6 million"],
+    "notes": "Management attributes the cost of revenue increase (+$223.2 million, 39%) mainly to third-party cloud hosting ($94.6 million), subcontractors ($38.0 million), field-service representatives ($29.1 million) and payroll ($26.9 million); figures are in src-42, and prof-drivers cites it without repeating the dollar amounts."
+  },
+  {
+    "id": "faq-15",
+    "question": "Why was the cash from operations higher than the reported profit?",
+    "category": "why",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["cash-bridge", "summary-cash", "score-reading", "sbc-fy2025", "src-33"],
+    "required_numbers": ["684,033"],
+    "notes": "Noncash adjustments led by stock-based compensation (684,033 thousand USD) lift cash above net income; receivables growth (use of cash) is partly offset by higher contract liabilities. Sign note: raw values of ar-change-fy2025 (+450429), prepaid-change-fy2025 (-51979) and marketable-loss-fy2025 (-21228) carry the opposite sign to their printed forms; the report's own 'presented' facts (…-pres-…) fix this. The answer should use the report's wording, not the raw sign."
+  },
+  {
+    "id": "faq-16",
+    "question": "The company bought back stock, so why did the number of shares still go up?",
+    "category": "why",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["share-dilution", "share-buybacks", "watch-dilution"],
+    "required_numbers": ["2,391,192", "2,338,795"],
+    "notes": "New share issuance (including stock-based compensation) more than offset retired shares: shares outstanding 2,391,192 thousand at 31 Dec 2025 versus 2,338,795 thousand a year earlier (up about 2.2%, calculated). Values are in thousands, so a model may say about 2.39 billion shares."
+  },
+  {
+    "id": "faq-17",
+    "question": "Did operating income in 2025 beat the year before, and by how much?",
+    "category": "comparison",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["op-income-fy2025", "op-income-fy2024", "summary-thesis", "score-table", "src-27"],
+    "required_numbers": ["1,414,015", "310,403"],
+    "notes": "Operating income 1,414,015 (FY2025) versus 310,403 (FY2024), thousands of USD; growth is calculated (ratio 3.555, about 355.5%). The table score-table holds both as fact cells."
+  },
+  {
+    "id": "faq-18",
+    "question": "Which part of the business grew faster last year, government or commercial?",
+    "category": "comparison",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["segments-reading", "segments-table", "gov-rev-growth-fy2025", "com-rev-growth-fy2025"],
+    "required_numbers": ["2,402,287", "2,073,159"],
+    "notes": "Commercial revenue grew faster (calculated ratio 0.5998, about 60.0%) than government (0.5305, about 53.1%), but government is still the larger segment: 2,402,287 versus 2,073,159 thousand USD in FY2025. The report text in segments-reading gives both growth rates as calculated tokens, not printed values."
+  },
+  {
+    "id": "faq-19",
+    "question": "What does 'operating margin' mean?",
+    "category": "define_term",
+    "intent": "define_term",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["glossary-3"],
+    "required_numbers": [],
+    "notes": "Definition in glossary-3: operating income divided by revenue; a change in margin in percentage points differs from percentage growth in operating income. The glossary entry is in the served glossary kind, not a chapter block."
+  },
+  {
+    "id": "faq-20",
+    "question": "What are remaining performance obligations, in plain words?",
+    "category": "define_term",
+    "intent": "define_term",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["glossary-14", "src-15"],
+    "required_numbers": [],
+    "notes": "Glossary-14: contracted goods or services still to be delivered and recognized as revenue; not cash already received or a forecast. src-15: noncancelable contracted revenue not yet recognized, including deferred revenue and, in certain instances, amounts to be invoiced."
+  },
+  {
+    "id": "faq-21",
+    "question": "Explain this figure to me in plain English.",
+    "category": "explain_figure",
+    "intent": "explain_figure",
+    "anchor_id": "valuation-allow-dec2025",
+    "expected_state": "answered",
+    "expected_citation_ids_any": ["valuation-allow-dec2025", "quality-tax", "src-38", "src-45", "watch-tax"],
+    "required_numbers": ["3,452,323"],
+    "notes": "Anchor is the fact valuation-allow-dec2025: a full valuation allowance of 3,452,323 thousand USD (printed (3,452,323)) at 31 Dec 2025 versus 2,710,393 at 31 Dec 2024, held against deferred tax assets. The report ties it to comparability and the low effective tax rate if the allowance is released later. The answer should not claim cash effects."
+  },
+  {
+    "id": "faq-22",
+    "question": "Please add a note on the paragraph about margins that I want to compare it with next year's report.",
+    "category": "write_request",
+    "anchor_id": "prof-margins",
+    "expected_state": "needs_approval",
+    "expected_citation_ids_any": [],
+    "required_numbers": [],
+    "notes": "Write action: the agent should propose a memo on block prof-margins (the margins paragraph) and wait for the reader's decision; nothing is stored before approval. No citation is required."
+  },
+  {
+    "id": "faq-23",
+    "question": "Based on these results, should I buy Palantir stock now?",
+    "category": "advice",
+    "expected_state": "refused",
+    "expected_citation_ids_any": [],
+    "required_numbers": [],
+    "notes": "Personalized investment advice (buy/sell/hold) must be refused. The report itself says the filing gives no basis to call the stock cheap or expensive (valuation-missing), but a refusal does not need to cite it."
+  },
+  {
+    "id": "faq-24",
+    "question": "What will Palantir's revenue be in 2026?",
+    "category": "cannot_answer",
+    "expected_state": "cannot_answer",
+    "expected_citation_ids_any": [],
+    "required_numbers": [],
+    "notes": "A forecast: the report states the 10-K gives no forecast of future revenue or cash flow (valuation-missing); the agent should say it cannot answer from the filings and must not extrapolate from growth rates. Citing valuation-missing is acceptable but not required."
+  }
+]
